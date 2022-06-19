@@ -1305,6 +1305,101 @@
           "identifier": "https://resources.gdevelop-app.com/assets/32x32 Fantasy Icons Pack v2/Icons/General Items/Large Gold Coin Stack_No Shadow.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "Minecraft.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Minecraft.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_Spin_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/GrafxKid Pack/Mini FX, Items & UI/Common Pick-ups/Coin_Spin_1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_Spin_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/GrafxKid Pack/Mini FX, Items & UI/Common Pick-ups/Coin_Spin_2.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_Spin_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/GrafxKid Pack/Mini FX, Items & UI/Common Pick-ups/Coin_Spin_3.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_Spin_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/GrafxKid Pack/Mini FX, Items & UI/Common Pick-ups/Coin_Spin_4.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coin_Spin_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coin_Spin_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coin_Spin_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Coin_Spin_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coin_Spin_4.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5861,55 +5956,6 @@
     },
     {
       "assetStoreId": "",
-      "name": "Coins",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Flash",
-          "type": "Flash::Flash",
-          "HalfPeriodTime": 0.1,
-          "IsFlashing": false,
-          "FlashDuration": 0
-        }
-      ],
-      "animations": [
-        {
-          "name": "coin",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\img\\external\\Icons\\icon20.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
       "name": "ItemSlot",
       "tags": "",
       "type": "Sprite",
@@ -6286,6 +6332,72 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "Large Gold Coin Stack_No Shadow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "ItemName",
+      "tags": "",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[ItemName]",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.fnt",
+        "textureAtlasResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "09bcc754c420d857e92bae06aeb0cc5c2105e320c1588640f569edc8e2447238",
+      "name": "Coin",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "coins",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Icons\\icon20.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -9749,17 +9861,6 @@
                     "Dead",
                     "True"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "Flash::Flash::Flash"
-                  },
-                  "parameters": [
-                    "Coins",
-                    "Flash",
-                    "1",
-                    ""
-                  ]
                 }
               ]
             }
@@ -10434,7 +10535,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10699,25 +10799,44 @@
                             "Player",
                             "PlatformerObject"
                           ]
-                        }
-                      ],
-                      "actions": [
+                        },
                         {
                           "type": {
-                            "value": "SeparateFromObjects"
+                            "inverted": true,
+                            "value": "PlatformBehavior::IsFalling"
                           },
                           "parameters": [
-                            "Enemy",
                             "Player",
-                            ""
+                            "PlatformerObject"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "PlatformBehavior::IsJumping"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject"
                           ]
                         }
                       ],
+                      "actions": [],
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [],
                           "actions": [
+                            {
+                              "type": {
+                                "value": "SeparateFromObjects"
+                              },
+                              "parameters": [
+                                "Enemy",
+                                "Player",
+                                "no"
+                              ]
+                            },
                             {
                               "type": {
                                 "value": "PlatformBehavior::PlatformerObjectBehavior::SetCurrentSpeed"
@@ -10743,6 +10862,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "UI",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10836,6 +10956,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -12281,7 +12402,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -12840,12 +12960,30 @@
                     },
                     {
                       "type": {
-                        "value": "ObjectVariableAsBoolean"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "Skeleton",
-                        "Attacking",
-                        "True"
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Attacking",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "PlayerInsight",
+                            "True"
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -12873,6 +13011,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Skeleton",
                   "conditions": [
@@ -13255,6 +13394,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Skeleton",
                   "conditions": [
@@ -14636,6 +14776,25 @@
                             "VariableString(PlayerInventory.Items[0])",
                             "yes"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetOpacity"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "255"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"HideItemNameTimer\""
+                          ]
                         }
                       ]
                     },
@@ -14678,6 +14837,25 @@
                             "\"player_inventory\"",
                             "VariableString(PlayerInventory.Items[1])",
                             "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetOpacity"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "255"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"HideItemNameTimer\""
                           ]
                         }
                       ]
@@ -14722,6 +14900,25 @@
                             "VariableString(PlayerInventory.Items[2])",
                             "yes"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetOpacity"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "255"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"HideItemNameTimer\""
+                          ]
                         }
                       ]
                     },
@@ -14765,6 +14962,25 @@
                             "VariableString(PlayerInventory.Items[3])",
                             "yes"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetOpacity"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "255"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"HideItemNameTimer\""
+                          ]
                         }
                       ]
                     }
@@ -14776,11 +14992,13 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Render Items",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "PlayerInventory.Items",
                       "valueIteratorVariableName": "PlayerInventory.Current",
@@ -15025,6 +15243,158 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Render Item Name",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "DepartScene"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "\"HideItemName\"",
+                            "\"HideItemNameTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetOpacity"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"HideItemNameTimer\"",
+                            ">",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::Opacity"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            ">",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetOpacity"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                      "iterableVariableName": "PlayerInventory.Items",
+                      "valueIteratorVariableName": "PlayerInventory.Current",
+                      "keyIteratorVariableName": "PlayerInventory.Index",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "GlobalVariable(ItemSlots.Index)",
+                            "=",
+                            "Variable(PlayerInventory.Index)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareStrings"
+                          },
+                          "parameters": [
+                            "VariableString(PlayerInventory.Current)",
+                            "!=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetText"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "VariableString(PlayerInventory.Current)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "GlobalVariable(ItemSlots.Index)",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetText"
+                          },
+                          "parameters": [
+                            "ItemName",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -15092,6 +15462,7 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Always",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -15182,11 +15553,52 @@
                             "Player",
                             "\"FlyTimer\"",
                             ">",
-                            "0"
+                            "0.3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::Gravity"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "=",
+                            "100"
                           ]
                         }
                       ],
-                      "actions": []
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::Gravity"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "=",
+                            "400"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SetCanJump"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PauseObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"FlyTimer\""
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -15196,11 +15608,13 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "On Use",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -15340,6 +15754,15 @@
                                 ">",
                                 "0"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnFloor"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
                             }
                           ],
                           "actions": [
@@ -15355,27 +15778,6 @@
                             },
                             {
                               "type": {
-                                "value": "AddForceVersPos"
-                              },
-                              "parameters": [
-                                "Player",
-                                "0",
-                                "-1000",
-                                "500",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "PlatformBehavior::SetCanJump"
-                              },
-                              "parameters": [
-                                "Player",
-                                "PlatformerObject"
-                              ]
-                            },
-                            {
-                              "type": {
                                 "value": "ResetObjectTimer"
                               },
                               "parameters": [
@@ -15385,11 +15787,40 @@
                             },
                             {
                               "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"FlyTimer\""
+                              ]
+                            },
+                            {
+                              "type": {
                                 "value": "SetAnimationName"
                               },
                               "parameters": [
                                 "Player",
                                 "\"using_item\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::Gravity"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject",
+                                "=",
+                                "100"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::SimulateJumpKey"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
                               ]
                             }
                           ]
@@ -15619,6 +16050,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "PlayerInventory.Items",
                       "valueIteratorVariableName": "PlayerInventory.Current",
@@ -18500,22 +18932,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 16,
-          "layer": "UI",
-          "locked": false,
-          "name": "Coins",
-          "persistentUuid": "3fe4dbc4-e38e-40fb-8dbc-7f83691946de",
-          "width": 16,
-          "x": 2,
-          "y": 162,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 13.5,
           "layer": "UI",
           "locked": false,
@@ -18611,16 +19027,32 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 42,
+          "customSize": false,
+          "height": 0,
           "layer": "UI",
           "locked": false,
-          "name": "SceneDebugText",
-          "persistentUuid": "be2eb316-1932-45ad-98b5-b6d59da999bf",
-          "width": 55,
-          "x": 7,
-          "y": 51,
-          "zOrder": 7,
+          "name": "ItemName",
+          "persistentUuid": "7f7e1d66-363d-4df3-aa03-2e6355d36be9",
+          "width": 0,
+          "x": 78,
+          "y": 23,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "UI",
+          "locked": false,
+          "name": "Coin",
+          "persistentUuid": "b09103a0-aad8-4f0f-964a-bff68202bf50",
+          "width": 17,
+          "x": 1,
+          "y": 162,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18636,7 +19068,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 4.375,
+        "zoomFactor": 1.950000000000002,
         "windowMask": false
       }
     }
