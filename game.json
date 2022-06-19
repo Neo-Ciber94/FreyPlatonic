@@ -1400,6 +1400,15 @@
         "name": "assets\\Coin_Spin_4.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Fire Burning_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Fire Burning_1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3240,6 +3249,12 @@
           "name": "Dead",
           "type": "boolean",
           "value": false
+        },
+        {
+          "folded": true,
+          "name": "BaseAttack",
+          "type": "number",
+          "value": 1
         }
       ],
       "effects": [],
@@ -3248,7 +3263,7 @@
           "name": "Health",
           "type": "Health::Health",
           "Health": 3,
-          "DamageCooldown": 1,
+          "DamageCooldown": 0.5,
           "MaxHealth": 3,
           "IsJustDamaged": false,
           "CooldownActive": false
@@ -6417,6 +6432,51 @@
           ]
         }
       ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 85,
+      "emitterForceMin": 45,
+      "flow": 45,
+      "maxParticleNb": 10,
+      "name": "FireParticles",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 51,
+      "particleBlue2": 0,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 51,
+      "particleGreen2": 255,
+      "particleLifeTimeMax": 0.30000001192092896,
+      "particleLifeTimeMin": 0.10000000149011612,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 20,
+      "particleSize2": 50,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tags": "",
+      "tank": 10,
+      "textureParticleName": "assets\\Fire Burning_1.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 3,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsGroups": [
@@ -6457,65 +6517,41 @@
     },
     {
       "folded": true,
-      "name": "CameraShake",
-      "type": "structure",
-      "children": [
-        {
-          "folded": true,
-          "name": "Max",
-          "type": "number",
-          "value": 3
-        },
-        {
-          "folded": true,
-          "name": "Value",
-          "type": "number",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "folded": true,
       "name": "ItemSlots",
       "type": "structure",
       "children": [
         {
-          "name": "CurrentItem",
-          "type": "string",
-          "value": ""
-        },
-        {
           "name": "Index",
           "type": "number",
           "value": -1
+        }
+      ]
+    },
+    {
+      "name": "Player",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "BaseAttack",
+          "type": "number",
+          "value": 1
         },
         {
           "folded": true,
-          "name": "Items",
-          "type": "array",
-          "children": []
+          "name": "BaseHP",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "Coins",
+          "type": "number",
+          "value": 0
         }
       ]
     },
     {
       "folded": true,
-      "name": "Player",
-      "type": "structure",
-      "children": [
-        {
-          "name": "Coins",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "folded": true,
-          "name": "MaxHP",
-          "type": "number",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "UI",
       "type": "structure",
       "children": [
@@ -8122,7 +8158,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4600000000000029,
+        "zoomFactor": 1.4600000000000022,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8508,9 +8544,9 @@
           "locked": false,
           "name": "Platform",
           "persistentUuid": "6005b87d-9c8b-47af-bcbb-b852be16507a",
-          "width": 706,
-          "x": 856.5,
-          "y": 307.5,
+          "width": 1438,
+          "x": 490.5,
+          "y": -58.5,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -8524,9 +8560,9 @@
           "locked": false,
           "name": "Platform",
           "persistentUuid": "ead89396-17bb-40d8-a412-689dd356b573",
-          "width": 706,
-          "x": -361.5,
-          "y": 300.5,
+          "width": 1431,
+          "x": -724,
+          "y": -62,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -9872,6 +9908,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Debug",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9960,6 +9997,7 @@
           "colorG": 122,
           "colorR": 252,
           "creationTime": 0,
+          "folded": true,
           "name": "Initialize Inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10049,6 +10087,7 @@
           "colorG": 116,
           "colorR": 116,
           "creationTime": 0,
+          "folded": true,
           "name": "EventBus",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10100,12 +10139,20 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "ModVarGlobal"
+                            "value": "CameraShake::CameraShake"
                           },
                           "parameters": [
-                            "CameraShake.Value",
-                            "=",
-                            "10"
+                            "",
+                            "10",
+                            "10",
+                            "\"\"",
+                            "",
+                            "0.5",
+                            "0",
+                            "0",
+                            "0.08",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -10127,12 +10174,20 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "ModVarGlobal"
+                            "value": "CameraShake::CameraShake"
                           },
                           "parameters": [
-                            "CameraShake.Value",
-                            "=",
-                            "5"
+                            "",
+                            "5",
+                            "5",
+                            "\"\"",
+                            "",
+                            "0.5",
+                            "0",
+                            "0",
+                            "0.08",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -10154,12 +10209,20 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "ModVarGlobal"
+                            "value": "CameraShake::CameraShake"
                           },
                           "parameters": [
-                            "CameraShake.Value",
-                            "=",
-                            "3"
+                            "",
+                            "3",
+                            "3",
+                            "\"\"",
+                            "",
+                            "0.5",
+                            "0",
+                            "0",
+                            "0.08",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -10401,6 +10464,13 @@
           "include": {
             "includeConfig": 0
           },
+          "target": "InventoryEvents"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
           "target": "SkeletonController"
         },
         {
@@ -10409,13 +10479,6 @@
             "includeConfig": 0
           },
           "target": "PlayerController"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "InventoryEvents"
         }
       ],
       "layers": [
@@ -10535,6 +10598,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11393,7 +11457,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Attacking",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11427,6 +11490,7 @@
                   "actions": [],
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -11581,6 +11645,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -11805,7 +11870,25 @@
                               "parameters": [
                                 "Enemy",
                                 "Health",
+                                "GlobalVariable(Player.BaseAttack)",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CameraShake::CameraShake"
+                              },
+                              "parameters": [
+                                "",
+                                "2",
+                                "2",
+                                "\"\"",
+                                "",
+                                "0.2",
+                                "0",
                                 "1",
+                                "0.08",
+                                "",
                                 ""
                               ]
                             }
@@ -13394,7 +13477,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Skeleton",
                   "conditions": [
@@ -13522,7 +13604,6 @@
                           ]
                         },
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -13644,7 +13725,6 @@
                           ]
                         },
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -13981,7 +14061,6 @@
                                   "comment2": ""
                                 },
                                 {
-                                  "folded": true,
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
@@ -14037,7 +14116,7 @@
                                           "parameters": [
                                             "Player",
                                             "Health",
-                                            "1",
+                                            "Skeleton.Variable(BaseAttack)",
                                             ""
                                           ]
                                         }
@@ -14059,7 +14138,6 @@
                                   "comment2": ""
                                 },
                                 {
-                                  "folded": true,
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
@@ -14158,7 +14236,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Damaged",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -14221,118 +14298,118 @@
                               ]
                             }
                           ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimationEnded"
+                          },
+                          "parameters": [
+                            "Skeleton"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimationName"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "\"damaged\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "\"idle\""
+                              ]
+                            }
+                          ]
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
                               "type": {
-                                "value": "AnimationEnded"
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
                               },
                               "parameters": [
-                                "Skeleton"
+                                "Skeleton.X()",
+                                ">",
+                                "Player.X()"
                               ]
                             }
                           ],
-                          "actions": [],
-                          "events": [
+                          "actions": [
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "AnimationName"
-                                  },
-                                  "parameters": [
-                                    "Skeleton",
-                                    "\"damaged\""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "SetAnimationName"
-                                  },
-                                  "parameters": [
-                                    "Skeleton",
-                                    "\"idle\""
-                                  ]
-                                }
+                              "type": {
+                                "value": "FlipX"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "yes"
                               ]
                             },
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                                  },
-                                  "parameters": [
-                                    "Skeleton.X()",
-                                    ">",
-                                    "Player.X()"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "FlipX"
-                                  },
-                                  "parameters": [
-                                    "Skeleton",
-                                    "yes"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ModVarObjet"
-                                  },
-                                  "parameters": [
-                                    "Skeleton",
-                                    "Direction",
-                                    "=",
-                                    "-1"
-                                  ]
-                                }
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "Direction",
+                                "=",
+                                "-1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Skeleton.X()",
+                                "<",
+                                "Player.X()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlipX"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "no"
                               ]
                             },
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                                  },
-                                  "parameters": [
-                                    "Skeleton.X()",
-                                    "<",
-                                    "Player.X()"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "FlipX"
-                                  },
-                                  "parameters": [
-                                    "Skeleton",
-                                    "no"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ModVarObjet"
-                                  },
-                                  "parameters": [
-                                    "Skeleton",
-                                    "Direction",
-                                    "=",
-                                    "1"
-                                  ]
-                                }
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "Direction",
+                                "=",
+                                "1"
                               ]
                             }
                           ]
@@ -15462,7 +15539,6 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Always",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -15528,6 +15604,36 @@
                             "Skeleton",
                             "Health",
                             "2",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CameraShake::CameraShake"
+                          },
+                          "parameters": [
+                            "",
+                            "5",
+                            "5",
+                            "\"\"",
+                            "",
+                            "0.5",
+                            "0",
+                            "0",
+                            "0.08",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "FireParticles",
+                            "Enemy.CenterX()",
+                            "Enemy.CenterY()",
                             ""
                           ]
                         },
@@ -15608,7 +15714,6 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "On Use",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -16198,24 +16303,6 @@
     {
       "author": "",
       "category": "",
-      "description": "Originally automatically extracted from events of the project",
-      "extensionNamespace": "",
-      "fullName": "CameraShake",
-      "helpPath": "",
-      "iconUrl": "",
-      "name": "CameraShake",
-      "previewIconUrl": "",
-      "shortDescription": "",
-      "version": "",
-      "tags": [],
-      "authorIds": [],
-      "dependencies": [],
-      "eventsFunctions": [],
-      "eventsBasedBehaviors": []
-    },
-    {
-      "author": "",
-      "category": "",
       "description": "",
       "extensionNamespace": "",
       "fullName": "",
@@ -16552,6 +16639,2429 @@
               "type": "expression"
             }
           ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": []
+    },
+    {
+      "author": "westboy31, Tristan Rhodes (https://victrisgames.itch.io/)",
+      "category": "",
+      "description": "Ideal for explosions, hit/impacts, earthquake, etc.\n\nSelect one or more methods of shaking:\n- Position:  Shake the X and/or Y position of the camera \n- Angle: Shake the rotation of the camera \n- Zoom: Shake the zoom level of the camera \n\nControl how the camera shakes:\n- Amplitude: How far the camera moves during each shake\n- Duration: Amount of time to shake the camera\n- Time between shakes: Amount of time between each change of the movement of the camera\n- Keep shaking until stopped (boolean)\n\nTips:\n- For a single-shake effect, set the \"Time between shakes\" to be equal to \"Duration\"  (great for a hit or impact)\n- To make the single-shake move in the opposite direction, use negative numbers \n- To repeat a single-shake effect in a loop, add a condition \"Camera is not shaking\" \n- Use a long \"Time between shakes\" to simulate a slow moving object (like a ship rocking back and forth)\n- Make sure to \"Stop shaking\" before starting a new shake if it uses different parameters. \n- Use \"Shake until stopped\" to simulate engine vibration, earthquake, or pulsing\n",
+      "extensionNamespace": "",
+      "fullName": "Camera Shake",
+      "helpPath": "https://victrisgames.itch.io/gdevelop-camera-shake-example",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXZlY3Rvci1kaWZmZXJlbmNlLWFiIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTMsMUMxLjg5LDEgMSwxLjg5IDEsM1Y1SDNWM0g1VjFIM003LDFWM0gxMFYxSDdNMTIsMVYzSDE0VjVIMTZWM0MxNiwxLjg5IDE1LjExLDEgMTQsMUgxMk0xLDdWMTBIM1Y3SDFNMTQsN0MxNCw3IDE0LDExLjY3IDE0LDE0QzExLjY3LDE0IDcsMTQgNywxNEM3LDE0IDcsMTggNywyMEM3LDIxLjExIDcuODksMjIgOSwyMkgyMEMyMS4xMSwyMiAyMiwyMS4xMSAyMiwyMFY5QzIyLDcuODkgMjEuMTEsNyAyMCw3QzE4LDcgMTQsNyAxNCw3TTE2LDlIMjBWMjBIOVYxNkgxNEMxNS4xMSwxNiAxNiwxNS4xMSAxNiwxNFY5TTEsMTJWMTRDMSwxNS4xMSAxLjg5LDE2IDMsMTZINVYxNEgzVjEySDFaIiAvPjwvc3ZnPg==",
+      "name": "CameraShake",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/vector-difference-ab.svg",
+      "shortDescription": "Shake the camera on the specified layer using one or more methods of shaking (position, angle, zoom).",
+      "version": "2.6.5",
+      "origin": {
+        "identifier": "CameraShake",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "shaking",
+        "camera",
+        "effect",
+        "screen",
+        "shake",
+        "zoom",
+        "position",
+        "rotate"
+      ],
+      "authorIds": [
+        "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Shake the camera on the specified layer, using one or more ways to shake (position, angle, zoom).",
+          "fullName": "Camera Shake",
+          "functionType": "Action",
+          "group": "",
+          "name": "CameraShake",
+          "private": false,
+          "sentence": "Shake camera on _PARAM3_ layer for _PARAM5_ seconds. Use an amplitude of _PARAM1_px on X axis and _PARAM2_px on Y axis, angle rotation amplitude _PARAM6_ degrees, and zoom amplitude _PARAM7_ percent.  Wait _PARAM8_ seconds between shakes. Keep shaking until stopped: _PARAM9_",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Camera Shake",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Start/Reset duration timer",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"__CameraShake_DurationTimer\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Pass input parameters to global variables so that onScenePostEvents can use them",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_PowerX",
+                        "=",
+                        "GetArgumentAsNumber(\"PowerX\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_PowerY",
+                        "=",
+                        "GetArgumentAsNumber(\"PowerY\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobalTxt"
+                      },
+                      "parameters": [
+                        "__CameraShake_Layer",
+                        "=",
+                        "GetArgumentAsString(\"Layer\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_Camera",
+                        "=",
+                        "GetArgumentAsNumber(\"Camera\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_Duration",
+                        "=",
+                        "GetArgumentAsNumber(\"Duration\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_PowerAngle",
+                        "=",
+                        "GetArgumentAsNumber(\"PowerAngle\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_PowerZoom",
+                        "=",
+                        "GetArgumentAsNumber(\"PowerZoom\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_TimeBetweenShakes",
+                        "=",
+                        "GetArgumentAsNumber(\"TimeBetweenShakes\")"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Determine if the shake should keep going until stopped",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetGlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "__CameraShake_ShakeForever",
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"ShakeForever\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetGlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "__CameraShake_ShakeForever",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Add default values if none were provided",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_Duration",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_Duration",
+                        "=",
+                        "0.5"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_TimeBetweenShakes",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_TimeBetweenShakes",
+                        "=",
+                        "0.08"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "If duration is less than a single shake, increase duration to make 1 full shake",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_Duration",
+                        "<",
+                        "GlobalVariable(__CameraShake_TimeBetweenShakes)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_Duration",
+                        "=",
+                        "GlobalVariable(__CameraShake_TimeBetweenShakes)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Detect initial shake",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_ShakeInProgress",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_InitialShake",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Initiate the onScenePostEvents function",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CameraShake_ShakeInProgress",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Amplitude of shaking on the X axis (pixels) (For example: 5)",
+              "longDescription": "",
+              "name": "PowerX",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Amplitude of shaking on the Y axis (pixels) (For example: 5)",
+              "longDescription": "",
+              "name": "PowerY",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Layer (base layer if empty)",
+              "longDescription": "",
+              "name": "Layer",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "layer"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Camera index (Default: 0)",
+              "longDescription": "",
+              "name": "Camera",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Duration (seconds) (Default: 0.5)",
+              "longDescription": "",
+              "name": "Duration",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Angle rotation amplitude (degrees) (For example: 2)",
+              "longDescription": "",
+              "name": "PowerAngle",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Zoom amplitude (percent change) (For example: 3)",
+              "longDescription": "",
+              "name": "PowerZoom",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Amount of time between shakes (seconds) (Default: 0.08)",
+              "longDescription": "",
+              "name": "TimeBetweenShakes",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Keep shaking until stopped",
+              "longDescription": "Duration value will be ignored",
+              "name": "ShakeForever",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "yesorno"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "",
+          "fullName": "",
+          "functionType": "Action",
+          "group": "",
+          "name": "onScenePostEvents",
+          "private": false,
+          "sentence": "",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Camera Shake",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Start shaking",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "__CameraShake_ShakeInProgress",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Keep shaking forever (if desired)",
+                          "comment2": ""
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "GlobalVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "__CameraShake_ShakeForever",
+                                "True"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarGlobal"
+                              },
+                              "parameters": [
+                                "__CameraShake_Duration",
+                                "=",
+                                "100"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"__CameraShake_DurationTimer\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "colorB": 228,
+                          "colorG": 176,
+                          "colorR": 74,
+                          "creationTime": 0,
+                          "name": "Calculate movement of the shake",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Run once before every shake movement",
+                              "comment2": ""
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Or"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "__CameraShake_InitialShake",
+                                        "=",
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Timer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "GlobalVariable(__CameraShake_TimeBetweenShakes)",
+                                        "\"__CameraShake_ShakeTimer\""
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ResetTimer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"__CameraShake_ShakeTimer\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_ShakeCounter",
+                                    "+",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "events": [
+                                {
+                                  "colorB": 228,
+                                  "colorG": 176,
+                                  "colorR": 74,
+                                  "creationTime": 0,
+                                  "folded": true,
+                                  "name": "Correct for drift and reset drift tracking variables",
+                                  "source": "",
+                                  "type": "BuiltinCommonInstructions::Group",
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Move to correct any drift from previous shake",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerAngle",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "RotateCamera"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "-",
+                                            "GlobalVariable(__CameraShake_AngleTravelled)",
+                                            "GlobalVariableString(__CameraShake_Layer)",
+                                            "GlobalVariable(__CameraShake_Camera)"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerZoom",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ZoomCamera"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "CameraZoom(GlobalVariableString(__CameraShake_Layer),GlobalVariable(__CameraShake_Camera)) - GlobalVariable(__CameraShake_ZoomTravelled)",
+                                            "GlobalVariableString(__CameraShake_Layer)",
+                                            "GlobalVariable(__CameraShake_Camera)"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Or"
+                                          },
+                                          "parameters": [],
+                                          "subInstructions": [
+                                            {
+                                              "type": {
+                                                "value": "VarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_PowerX",
+                                                "!=",
+                                                "0"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "VarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_PowerY",
+                                                "!=",
+                                                "0"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "SetCameraX"
+                                          },
+                                          "parameters": [
+                                            "Object",
+                                            "-",
+                                            "GlobalVariable(__CameraShake_DisplacementTravelledX)",
+                                            "GlobalVariableString(__CameraShake_Layer)",
+                                            "GlobalVariable(__CameraShake_Camera)"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetCameraY"
+                                          },
+                                          "parameters": [
+                                            "Object",
+                                            "-",
+                                            "GlobalVariable(__CameraShake_DisplacementTravelledY)",
+                                            "GlobalVariableString(__CameraShake_Layer)",
+                                            "GlobalVariable(__CameraShake_Camera)"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Reset drift detection variables",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementTravelledX",
+                                            "=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementTravelledY",
+                                            "=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_AngleTravelled",
+                                            "=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_ZoomTravelled",
+                                            "=",
+                                            "0"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "parameters": []
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Calculate Position Shake",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Or"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerX",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerY",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "PositionDisplacement = (DesiredDuration - RunningTimer) / DesiredDuration * Amplitude * [-1 or 1]",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Make initial shake NOT random so users can set a direction for a one-shake effect",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_InitialShake",
+                                            "=",
+                                            "1"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [],
+                                      "events": [
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "VarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_PowerX",
+                                                "!=",
+                                                "0"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "ModVarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_DisplacementX",
+                                                "=",
+                                                "(GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) * GlobalVariable(__CameraShake_PowerX)"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "VarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_PowerY",
+                                                "!=",
+                                                "0"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "ModVarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_DisplacementY",
+                                                "=",
+                                                "(GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) * GlobalVariable(__CameraShake_PowerY)"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "After initial shake pick a random direction",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_InitialShake",
+                                            "=",
+                                            "0"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [],
+                                      "events": [
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "VarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_PowerX",
+                                                "!=",
+                                                "0"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "ModVarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_DisplacementX",
+                                                "=",
+                                                "(GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) * GlobalVariable(__CameraShake_PowerX) * RandomWithStep(-1, 1, 2)"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "VarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_PowerY",
+                                                "!=",
+                                                "0"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "ModVarGlobal"
+                                              },
+                                              "parameters": [
+                                                "__CameraShake_DisplacementY",
+                                                "=",
+                                                "(GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) * GlobalVariable(__CameraShake_PowerY) * RandomWithStep(-1, 1, 2)"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Calculate Rotation (angle) shake ",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "__CameraShake_PowerAngle",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Every \"even\" shake, rotate counter-clockwise",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "DisplacementAngle = ((DesiredDuration - RunningTimer) / DesiredDuration) * Amplitude",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "Egal"
+                                          },
+                                          "parameters": [
+                                            "mod(GlobalVariable(__CameraShake_ShakeCounter),2)",
+                                            "=",
+                                            "0"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementAngle",
+                                            "=",
+                                            "(GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) *  GlobalVariable(__CameraShake_PowerAngle)"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Every \"odd\" shake, rotate clockwise (this includes the initial shake and can be used for a one shake effect)",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "DisplacementAngle = -1 * ((DesiredDuration - RunningTimer) / DesiredDuration) * Amplitude",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "Egal"
+                                          },
+                                          "parameters": [
+                                            "mod(GlobalVariable(__CameraShake_ShakeCounter),2)",
+                                            "=",
+                                            "1"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementAngle",
+                                            "=",
+                                            "-1 * (GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) *  GlobalVariable(__CameraShake_PowerAngle)"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Calculate Zoom shake",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "__CameraShake_PowerZoom",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Calculate camera zoom displacement, with linear decay over time",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "ZoomDisplacement = ((DesiredDuration - RunningTimer) / DesiredDuration) * Amplitude *  1/100",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Every even shake, increase zoom",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "Egal"
+                                          },
+                                          "parameters": [
+                                            "mod(GlobalVariable(__CameraShake_ShakeCounter),2)",
+                                            "=",
+                                            "0"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementZoom",
+                                            "=",
+                                            "-1 * (GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) * GlobalVariable(__CameraShake_PowerZoom) * (1/100)"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Every \"odd\" shake, decrease scale",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "ZoomDisplacement = -1 * ((DesiredDuration - RunningTimer) / DesiredDuration) * Amplitude *  1/100",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "Egal"
+                                          },
+                                          "parameters": [
+                                            "mod(GlobalVariable(__CameraShake_ShakeCounter),2)",
+                                            "=",
+                                            "1"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementZoom",
+                                            "=",
+                                            "(GlobalVariable(__CameraShake_Duration) - TimerElapsedTime(\"__CameraShake_DurationTimer\")) / GlobalVariable(__CameraShake_Duration) * GlobalVariable(__CameraShake_PowerZoom) * (1/100)"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Save that initial shake has been processed",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "ModVarGlobal"
+                                      },
+                                      "parameters": [
+                                        "__CameraShake_InitialShake",
+                                        "=",
+                                        "0"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "parameters": []
+                        },
+                        {
+                          "colorB": 228,
+                          "colorG": 176,
+                          "colorR": 74,
+                          "creationTime": 0,
+                          "name": "Move camera",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Calculate the fraction of shake that occured during this frame",
+                              "comment2": ""
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_PercentTimeElapsedThisFrame",
+                                    "=",
+                                    "min(1,TimeDelta()/GlobalVariable(__CameraShake_TimeBetweenShakes))"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Increase change for the first half of the shake (move away from original values)",
+                              "comment2": ""
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Timer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "GlobalVariable(__CameraShake_TimeBetweenShakes)/2",
+                                    "\"__CameraShake_ShakeTimer\""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Change position",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Or"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerX",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerY",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "CameraX"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "-",
+                                        "round(1024 * GlobalVariable(__CameraShake_DisplacementX) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024",
+                                        "GlobalVariableString(__CameraShake_Layer)",
+                                        "GlobalVariable(__CameraShake_Camera)"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "CameraY"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "-",
+                                        "round(1024 * GlobalVariable(__CameraShake_DisplacementY) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024",
+                                        "GlobalVariableString(__CameraShake_Layer)",
+                                        "GlobalVariable(__CameraShake_Camera)"
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Save movement to calculate drift",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementTravelledX",
+                                            "-",
+                                            "round(1024 * GlobalVariable(__CameraShake_DisplacementX) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementTravelledY",
+                                            "-",
+                                            "round(1024 * GlobalVariable(__CameraShake_DisplacementY) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Change angle",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "Egal"
+                                      },
+                                      "parameters": [
+                                        "GlobalVariable(__CameraShake_PowerAngle)",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "RotateCamera"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "+",
+                                        "round(1024 * (GlobalVariable(__CameraShake_DisplacementAngle) * Variable(__CameraShake_PercentTimeElapsedThisFrame))) / 1024",
+                                        "",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Save movement to calculate drift",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_AngleTravelled",
+                                            "+",
+                                            "round(1024 * (GlobalVariable(__CameraShake_DisplacementAngle) * Variable(__CameraShake_PercentTimeElapsedThisFrame))) / 1024"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Change zoom",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "Egal"
+                                      },
+                                      "parameters": [
+                                        "GlobalVariable(__CameraShake_PowerZoom)",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "ZoomCamera"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "CameraZoom(GlobalVariableString(__CameraShake_Layer),GlobalVariable(__CameraShake_Camera)) + round(1024 * GlobalVariable(__CameraShake_DisplacementZoom) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024",
+                                        "GlobalVariableString(__CameraShake_Layer)",
+                                        "GlobalVariable(__CameraShake_Camera)"
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Save movement to calculate drift",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_ZoomTravelled",
+                                            "+",
+                                            "round(1024 * GlobalVariable(__CameraShake_DisplacementZoom) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Decrease change the second half of the shake (return to original position)",
+                              "comment2": ""
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "Timer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "GlobalVariable(__CameraShake_TimeBetweenShakes)/2",
+                                    "\"__CameraShake_ShakeTimer\""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Change position",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Or"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerX",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_PowerY",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "CameraX"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "+",
+                                        "round(1024 * GlobalVariable(__CameraShake_DisplacementX) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024",
+                                        "GlobalVariableString(__CameraShake_Layer)",
+                                        "GlobalVariable(__CameraShake_Camera)"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "CameraY"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "+",
+                                        "round(1024 * GlobalVariable(__CameraShake_DisplacementY) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024",
+                                        "GlobalVariableString(__CameraShake_Layer)",
+                                        "GlobalVariable(__CameraShake_Camera)"
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Save the amount of change to calculate drift",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementTravelledX",
+                                            "+",
+                                            "round(1024 * GlobalVariable(__CameraShake_DisplacementX) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_DisplacementTravelledY",
+                                            "+",
+                                            "round(1024 * GlobalVariable(__CameraShake_DisplacementY) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Change angle",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "Egal"
+                                      },
+                                      "parameters": [
+                                        "GlobalVariable(__CameraShake_PowerAngle)",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "RotateCamera"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "-",
+                                        "round(1024 * (GlobalVariable(__CameraShake_DisplacementAngle) * Variable(__CameraShake_PercentTimeElapsedThisFrame))) / 1024",
+                                        "",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Save the amount of change to calculate drift",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_AngleTravelled",
+                                            "-",
+                                            "round(1024 * (GlobalVariable(__CameraShake_DisplacementAngle) * Variable(__CameraShake_PercentTimeElapsedThisFrame))) / 1024"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "Change zoom",
+                                  "comment2": ""
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "Egal"
+                                      },
+                                      "parameters": [
+                                        "GlobalVariable(__CameraShake_PowerZoom)",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "ZoomCamera"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "CameraZoom(GlobalVariableString(__CameraShake_Layer),GlobalVariable(__CameraShake_Camera)) - round(1024 *  GlobalVariable(__CameraShake_DisplacementZoom) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024",
+                                        "GlobalVariableString(__CameraShake_Layer)",
+                                        "GlobalVariable(__CameraShake_Camera)"
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Save the amount of change to calculate drift",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ModVarGlobal"
+                                          },
+                                          "parameters": [
+                                            "__CameraShake_ZoomTravelled",
+                                            "-",
+                                            "round(1024 *  GlobalVariable(__CameraShake_DisplacementZoom) * Variable(__CameraShake_PercentTimeElapsedThisFrame)) / 1024"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "parameters": []
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Stop shaking",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Stop shaking when the duration has been reached or if stop shaking has been requested",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "Timer"
+                              },
+                              "parameters": [
+                                "",
+                                "GlobalVariable(__CameraShake_Duration)",
+                                "\"__CameraShake_DurationTimer\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarGlobal"
+                              },
+                              "parameters": [
+                                "__CameraShake_ShakeInProgress",
+                                "=",
+                                "-1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "__CameraShake_ShakeInProgress",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "colorB": 228,
+                          "colorG": 176,
+                          "colorR": 74,
+                          "creationTime": 0,
+                          "name": "Correct for drift and reset drift tracking variables",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Move to correct drift from previous shake",
+                              "comment2": ""
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_PowerAngle",
+                                    "!=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "RotateCamera"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "-",
+                                    "GlobalVariable(__CameraShake_AngleTravelled)",
+                                    "GlobalVariableString(__CameraShake_Layer)",
+                                    "GlobalVariable(__CameraShake_Camera)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_PowerZoom",
+                                    "!=",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ZoomCamera"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "CameraZoom(GlobalVariableString(__CameraShake_Layer),GlobalVariable(__CameraShake_Camera)) - GlobalVariable(__CameraShake_ZoomTravelled)",
+                                    "GlobalVariableString(__CameraShake_Layer)",
+                                    "GlobalVariable(__CameraShake_Camera)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Or"
+                                  },
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "__CameraShake_PowerX",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "__CameraShake_PowerY",
+                                        "!=",
+                                        "0"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetCameraX"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "-",
+                                    "GlobalVariable(__CameraShake_DisplacementTravelledX)",
+                                    "GlobalVariableString(__CameraShake_Layer)",
+                                    "GlobalVariable(__CameraShake_Camera)"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetCameraY"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "-",
+                                    "GlobalVariable(__CameraShake_DisplacementTravelledY)",
+                                    "GlobalVariableString(__CameraShake_Layer)",
+                                    "GlobalVariable(__CameraShake_Camera)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Reset drift detection variables",
+                              "comment2": ""
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_DisplacementTravelledX",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_DisplacementTravelledY",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_AngleTravelled",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_ZoomTravelled",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobal"
+                                  },
+                                  "parameters": [
+                                    "__CameraShake_ShakeCounter",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "parameters": []
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Check if camera is shaking.",
+          "fullName": "Check if camera is shaking",
+          "functionType": "Condition",
+          "group": "",
+          "name": "IsShaking",
+          "private": false,
+          "sentence": " Camera is shaking",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "__CameraShake_ShakeInProgress",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Stop shaking the camera.",
+          "fullName": "Stop shaking the camera",
+          "functionType": "Action",
+          "group": "",
+          "name": "StopShaking",
+          "private": false,
+          "sentence": "Stop shaking the camera",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CameraShake::IsShaking"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "__CameraShake_ShakeInProgress",
+                    "=",
+                    "-1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [],
           "objectGroups": []
         }
       ],
