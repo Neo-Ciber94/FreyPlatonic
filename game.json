@@ -1386,6 +1386,15 @@
         "name": "assets\\Fire Projectile_2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Icons/icon7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Icons\\icon7.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3020,6 +3029,90 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\img\\knight-1\\damaged\\damaged1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 28
+                      },
+                      {
+                        "x": 40,
+                        "y": 28
+                      },
+                      {
+                        "x": 40,
+                        "y": 48
+                      },
+                      {
+                        "x": 24,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "using_item",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.10000000149011612,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\img\\knight-1\\blocking\\blocking1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 24,
+                        "y": 28
+                      },
+                      {
+                        "x": 40,
+                        "y": 28
+                      },
+                      {
+                        "x": 40,
+                        "y": 48
+                      },
+                      {
+                        "x": 24,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\img\\knight-1\\blocking\\blocking2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6200,6 +6293,54 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "FlyPotion",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Name",
+          "type": "string",
+          "value": "fly_potion"
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "fly_potion",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Icons\\icon7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [
@@ -7493,49 +7634,22 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Camera Shake",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "CameraShake.Value",
-                ">",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "CameraShake.Value",
-                "-",
-                "1"
-              ]
-            }
-          ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                    "value": "VarGlobal"
                   },
                   "parameters": [
-                    "mod(GlobalVariable(CameraShake.Value), 2)",
-                    "=",
+                    "CameraShake.Value",
+                    ">",
                     "0"
                   ]
                 }
@@ -7543,48 +7657,78 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetCameraY"
+                    "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "",
-                    "=",
-                    "CameraY(,)+GlobalVariable(CameraShake.Max)",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "mod(GlobalVariable(CameraShake.Value), 2)",
-                    "!=",
-                    "0"
+                    "CameraShake.Value",
+                    "-",
+                    "1"
                   ]
                 }
               ],
-              "actions": [
+              "events": [
                 {
-                  "type": {
-                    "value": "SetCameraY"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "CameraY(,)-GlobalVariable(CameraShake.Max)",
-                    "",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "mod(GlobalVariable(CameraShake.Value), 2)",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCameraY"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "CameraY(,)+GlobalVariable(CameraShake.Max)",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "mod(GlobalVariable(CameraShake.Value), 2)",
+                        "!=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCameraY"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "CameraY(,)-GlobalVariable(CameraShake.Max)",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -7889,7 +8033,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 2.3850000000000002,
+        "zoomFactor": 2.2600000000000007,
         "windowMask": false
       },
       "objectsGroups": [
@@ -7898,6 +8042,12 @@
           "objects": [
             {
               "name": "HealPotion"
+            },
+            {
+              "name": "FireBurning"
+            },
+            {
+              "name": "FlyPotion"
             }
           ]
         }
@@ -9749,7 +9899,7 @@
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Repeat",
-                  "repeatExpression": "50",
+                  "repeatExpression": "3",
                   "conditions": [],
                   "actions": [
                     {
@@ -9774,6 +9924,21 @@
                       "parameters": [
                         "EventBus.Events",
                         "\"Inventory/Add/FireBall\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "EventBus.Events",
+                        "\"Inventory/Add/FlyPotion\""
                       ]
                     }
                   ]
@@ -9809,6 +9974,113 @@
                   "conditions": [],
                   "actions": [],
                   "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Camera Shake",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.CurrentEvent",
+                            "=",
+                            "\"Camera/Shake10\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "CameraShake.Value",
+                            "=",
+                            "10"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.CurrentEvent",
+                            "=",
+                            "\"Camera/Shake5\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "CameraShake.Value",
+                            "=",
+                            "5"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.CurrentEvent",
+                            "=",
+                            "\"Camera/Shake3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "CameraShake.Value",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Items",
+                      "comment2": ""
+                    },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
@@ -9846,6 +10118,48 @@
                             "",
                             "\"player_inventory\"",
                             "\"heal_potion\"",
+                            "99"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.Current",
+                            "=",
+                            "\"Inventory/Add/FlyPotion\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Items::ItemToInventory"
+                          },
+                          "parameters": [
+                            "",
+                            "FlyPotion",
+                            "\"fly_potion\"",
+                            "ItemCount",
+                            "0",
+                            "\"player_inventory\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Inventory::SetMaximum"
+                          },
+                          "parameters": [
+                            "",
+                            "\"player_inventory\"",
+                            "\"fly_potion\"",
                             "99"
                           ]
                         }
@@ -13952,11 +14266,13 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Render Slots",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -14369,6 +14685,55 @@
                               "parameters": [
                                 "VariableString(PlayerInventory.Items[Variable(PlayerInventory.Index)])",
                                 "=",
+                                "\"fly_potion\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "FlyPotion",
+                                "=",
+                                "6 + Variable(PlayerInventory.Index) * 17",
+                                "=",
+                                "23"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangeWidth"
+                              },
+                              "parameters": [
+                                "FlyPotion",
+                                "=",
+                                "15"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangeHeight"
+                              },
+                              "parameters": [
+                                "FlyPotion",
+                                "=",
+                                "16"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareStrings"
+                              },
+                              "parameters": [
+                                "VariableString(PlayerInventory.Items[Variable(PlayerInventory.Index)])",
+                                "=",
                                 "\"fire_ball\""
                               ]
                             }
@@ -14429,6 +14794,17 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "ItemCount",
+                            "Items",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "BitmapText::BitmapTextObject::SetText"
                           },
                           "parameters": [
@@ -14484,6 +14860,15 @@
                           "parameters": [
                             "Player",
                             "\"FireBallCooldown\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"FlyPotionCooldown\""
                           ]
                         }
                       ]
@@ -14667,7 +15052,7 @@
                               "parameters": [
                                 "",
                                 "\"player_inventory\"",
-                                "Items.VariableString(Name)"
+                                "\"heal_potion\""
                               ]
                             },
                             {
@@ -14691,10 +15076,98 @@
                                 "2",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"using_item\""
+                              ]
                             }
                           ]
                         },
                         {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Items::CanUseItem"
+                              },
+                              "parameters": [
+                                "",
+                                "\"fly_potion\"",
+                                "\"player_inventory\"",
+                                "GlobalVariable(ItemSlots.Index)",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CompareObjectTimer"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"FlyPotionCooldown\"",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Inventory::Remove"
+                              },
+                              "parameters": [
+                                "",
+                                "\"player_inventory\"",
+                                "\"fly_potion\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AddForceXY"
+                              },
+                              "parameters": [
+                                "Player",
+                                "1000",
+                                "-5000",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::SetCanJump"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResetObjectTimer"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"FlyPotionCooldown\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"using_item\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -14753,6 +15226,15 @@
                                 "0",
                                 "1"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Player",
+                                "\"using_item\""
+                              ]
                             }
                           ],
                           "events": [
@@ -14799,8 +15281,20 @@
                           "comment2": ""
                         },
                         {
-                          "type": "BuiltinCommonInstructions::Standard",
+                          "type": "BuiltinCommonInstructions::ForEach",
+                          "object": "Items",
                           "conditions": [
+                            {
+                              "type": {
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
+                              },
+                              "parameters": [
+                                "",
+                                "ItemCount",
+                                "Items",
+                                ""
+                              ]
+                            },
                             {
                               "type": {
                                 "value": "Inventory::Count"
@@ -14817,10 +15311,12 @@
                           "actions": [
                             {
                               "type": {
-                                "value": "Delete"
+                                "value": "LinkedObjects::PickObjectsLinkedTo"
                               },
                               "parameters": [
+                                "",
                                 "Items",
+                                "ItemCount",
                                 ""
                               ]
                             },
@@ -14832,43 +15328,52 @@
                                 "ItemCount",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Items",
+                                ""
+                              ]
                             }
                           ]
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                      "iterableVariableName": "PlayerInventory.Items",
+                      "valueIteratorVariableName": "PlayerInventory.Current",
+                      "keyIteratorVariableName": "PlayerInventory.Index",
+                      "conditions": [],
+                      "actions": [],
+                      "events": [
                         {
-                          "type": "BuiltinCommonInstructions::ForEachChildVariable",
-                          "iterableVariableName": "PlayerInventory.Items",
-                          "valueIteratorVariableName": "PlayerInventory.Current",
-                          "keyIteratorVariableName": "PlayerInventory.Index",
-                          "conditions": [],
-                          "actions": [],
-                          "events": [
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "Inventory::Has"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"player_inventory\"",
-                                    "VariableString(PlayerInventory.Current)"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "ModVarScene"
-                                  },
-                                  "parameters": [
-                                    "PlayerInventory.Items[Variable(PlayerInventory.Index)]",
-                                    "=",
-                                    "0"
-                                  ]
-                                }
+                              "type": {
+                                "inverted": true,
+                                "value": "Inventory::Has"
+                              },
+                              "parameters": [
+                                "",
+                                "\"player_inventory\"",
+                                "VariableString(PlayerInventory.Current)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "PlayerInventory.Items[Variable(PlayerInventory.Index)]",
+                                "=",
+                                "0"
                               ]
                             }
                           ]
@@ -14883,6 +15388,100 @@
             }
           ],
           "parameters": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Level 1",
+      "lastChangeTimeStamp": 0,
+      "name": "CameraShakeEvents",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "CameraShake.Value",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "CameraShake.Value",
+                "-",
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "mod(GlobalVariable(CameraShake.Value), 2)",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraY(,)+GlobalVariable(CameraShake.Max)",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "mod(GlobalVariable(CameraShake.Value), 2)",
+                    "!=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraY(,)-GlobalVariable(CameraShake.Max)",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -17761,7 +18360,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 3.7749999999999986,
+        "zoomFactor": 4.249999999999999,
         "windowMask": false
       }
     }
