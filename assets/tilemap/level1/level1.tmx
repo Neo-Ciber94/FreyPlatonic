@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="75" height="45" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="64">
+ <editorsettings>
+  <export target="level1.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" name="main_lev_buildA" tilewidth="16" tileheight="16" tilecount="7056" columns="84">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/main_lev_buildA.png" width="1344" height="1344"/>
+ </tileset>
+ <tileset firstgid="7057" name="Background Images" tilewidth="1" tileheight="1" tilecount="0" columns="0"/>
+ <tileset firstgid="7057" name="background6" tilewidth="426" tileheight="384" tilecount="1" columns="1">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/Background/background6.png" width="426" height="384"/>
+ </tileset>
+ <tileset firstgid="7058" name="background1" tilewidth="426" tileheight="384" tilecount="1" columns="1">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/Background/background1.png" width="426" height="384"/>
+ </tileset>
+ <tileset firstgid="7059" name="background2" tilewidth="426" tileheight="384" tilecount="1" columns="1">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/Background/background2.png" width="426" height="384"/>
+ </tileset>
+ <tileset firstgid="7060" name="background3" tilewidth="426" tileheight="384" tilecount="1" columns="1">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/Background/background3.png" width="426" height="384"/>
+ </tileset>
+ <tileset firstgid="7061" name="background4" tilewidth="426" tileheight="384" tilecount="1" columns="1">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/Background/background4.png" width="426" height="384"/>
+ </tileset>
+ <tileset firstgid="7062" name="background5" tilewidth="426" tileheight="384" tilecount="1" columns="1">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/Background/background5.png" width="426" height="384"/>
+ </tileset>
+ <tileset firstgid="7063" name="main_lev_buildB" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="../../img/external/PixelPlatformerSet2v.1.1/main_lev_buildB.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="8087" source="../../tilemap palletes/pallete1.tsx"/>
+ <objectgroup id="5" name="Bg1">
+  <object id="34" gid="7058" x="1.66667" y="382.667" width="426" height="384"/>
+  <object id="35" gid="7058" x="428.333" y="381.333" width="426" height="384"/>
+  <object id="36" gid="7058" x="773.667" y="385.333" width="426" height="384"/>
+  <object id="37" gid="1073748882" x="3" y="766.667" width="426" height="384"/>
+  <object id="38" gid="1073748882" x="425.667" y="772" width="426" height="384"/>
+  <object id="39" gid="1073748882" x="773.667" y="769.333" width="426" height="384"/>
+  <object id="58" gid="7058" x="4.5" y="382" width="426" height="384"/>
+  <object id="62" gid="1073748882" x="1.66667" y="762.667" width="426" height="384"/>
+ </objectgroup>
+ <objectgroup id="7" name="Bg2">
+  <object id="41" gid="7059" x="9.66667" y="670.667" width="426" height="384"/>
+  <object id="46" gid="7059" x="435" y="673.333" width="426" height="384"/>
+  <object id="47" gid="7059" x="856.333" y="676" width="426" height="384"/>
+  <object id="63" gid="7059" x="-1" y="670.667" width="426" height="384"/>
+ </objectgroup>
+ <objectgroup id="8" name="Bg3">
+  <object id="48" gid="7060" x="4.33333" y="701.333" width="426" height="384"/>
+  <object id="49" gid="7060" x="433.667" y="710.667" width="426" height="384"/>
+  <object id="50" gid="7060" x="837.667" y="710.667" width="426" height="384"/>
+  <object id="57" gid="7061" x="416" y="711" width="426" height="384"/>
+ </objectgroup>
+ <objectgroup id="9" name="Bg4">
+  <object id="51" gid="7061" x="9.66667" y="710.667" width="426" height="384"/>
+  <object id="52" gid="7061" x="439" y="717.333" width="426" height="384"/>
+  <object id="53" gid="7061" x="848.333" y="725.333" width="426" height="384"/>
+  <object id="54" gid="7062" x="12.3333" y="748" width="426" height="384"/>
+  <object id="55" gid="7062" x="437.667" y="744" width="426" height="384"/>
+  <object id="56" gid="7062" x="853.667" y="744" width="426" height="384"/>
+  <object id="59" gid="7058" x="399" y="405.333" width="426" height="384"/>
+  <object id="60" gid="7058" x="399" y="405.333" width="426" height="384"/>
+ </objectgroup>
+ <layer id="10" name="Mountains" width="75" height="45" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1EEKglAQBmDtPkHbukF0r1pEkLSrA3QnW7SqrlC7RkSIECJ4ocn3wc+Airw3TyfLAAAAAIAu7fI0+VfrD2sv4v496iHqLVH6YJPXe3+tRUu2kX1e7/8cWUbKlvc1zywis1G6dKnqyzxy/SLTt/WP49qkJ2f+K8fIJeG5V9/YamA9q2bII0v7b1Qpo0+ngfSqmSGpe9SnmQIAAAAAAEA3npIPTxs=
+  </data>
+ </layer>
+ <layer id="11" name="Pillars" width="75" height="45" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztmMlu1EAQhn1nubDcJnMFsoAU4CVYLgFeIosSJuFcdxaBWF6C5RLgJQJcArwEyyXAmQ9ZkUwypqtqyh3b5Jd+qafdS/mfbtffXRQltgZF8Q6+hx8GRRLTU0UxA2fh3FS6fR2u0PcqvAavK8fx9InEF/T5Cr/B7wqtouJdpO8SXIYrynE8fSJxhDmPwmPwuGL+yHhXh0WxBm/D0XD/73W4UVN3ELDuqUXW3hJchiuKdTgOZ3jXs/AcnIYzcHa4v76u3Rw8Dy9k1sy6p+6izz14Hz5wauUdJ2puL6x76jkxvoAv4asJ4vWMEzV3LljzZuQ4UXPngjVvRo4TNXcuWPNm5DhRc+dClBf1jBM1dy5EedEu+nYrorxoF3173+D1yhEeu2vw+tWD9rn/gud/1PTx+tU2+9ymzjgWv7rK87WBvV9uNHXGsfjVqlZt9rlNnXEsfrWqVZt9blNnHItffcgYjwb2frnR1Blnr199jBZP4FP4rKRQFuqEZ1LXr01o6oyz169uos9r+Aa+LSmUhTrZrGjVZp+b64yzjT4f4Sf4uaRQFupku6KVBdXvXA7kOuPs8E4/4E/4q6RQFupkx6lV9TvXJ5xA05PwFDxdUigLdcIz8YyZe13lwjz6XISX4OWSQlmok/lDrf7CAvrcgDfhrZJCWaiTBadW4/ZgVb9JtdTkbm1+17b7gxH6rMMNeKekUBbqZBS4rqr6TaqVJndr87u2XQoWzatIaTXpt1+Tu7X5PcoHeDVveg9qcrc2v2vbpWL2at70utLkbm1+17ZLxez1XuO0qltX1jW22z6Vu7X5XdsuFafXe437D+rWlVerVO7W5ndtu1ScXu9ludO17sfd9qncrc3v2napOL3ey3Kn2xff6vVeljvdvp4dtfDe6f+PsNzpWtdV17RNxeu904+Yu21IrQXvnb4GXdMqFa/lfrbv6yoVr+V+1uuvuoKuxXuIQ/QdvwERCy4r
+  </data>
+ </layer>
+ <layer id="1" name="Platforms" width="75" height="45" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztmkFuwjAQRS01Biq1F0PlGD0UK7DaRbvskmshlR1SbQSURRN9DxNPHf8n/VUWCS8wM7ZxjhBCCGmXT4/ly1s/qT1Hj+WZrtxr59x2/nde4rVVzBNdndh1w9cDXV2hKxzU1eOszPP8Z1BXixneM6cUiSu0X04tOa7WsR9ubnpjaCw5rsgvdIVDVzh0hdM3C9RKGHF+QHplTbw9jDc/9K2da+U7fp5DN7wnIEnaQ5havbq40l6/BsAVMvtD9xqxjtxm6e1cadWz9L5LrEksXfX9fnNJrpYD9VErm/Pa5EO55iKutLi4qnUfrBVXGnUwzaFSV7n32ns7V6u5TqSupHXXwpXG3sw985Wk7r6PUHNLUbJe1Q5d4SRX0jOH1gh3zNK5lD5/0U76Tknn6Fy0+rZlSvVw6/MYjbC249AVDl3h0BUOXeG0+v8XSeJcuWWwWM93NeUH0o3QTA==
+  </data>
+ </layer>
+ <layer id="12" name="Decodation" width="75" height="45" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt2kEOwiAQQFGO0tTjuDCu9HDuekJI2CsRwjiBlmjTVvJfMtFWSrsRBqbGAAB6dBuMub9iGnP4ce+nAgDgeC5D/i7nzRRpTm3po3R9IvuR92xhF+bwa+PzAQCAT2GO7Hm9nPKRkCvo3KTUTiJ/AP6H3gdc4/9bWmPIdcn5lNvpMfQxvn8PnzoAoAc25o9WhIvnXAx5zotjt8JYmMbo2h7U0XLbWg4KAL3SNQdfqTkwPm6rVL+Z4hwtj2v1ltL5uZqQlubnlrYAAAC/WHp/5dv3S3RfsvYkc9058t6tuZTus7bv0ZqXAdjXE92aZm0=
+  </data>
+ </layer>
+</map>
