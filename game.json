@@ -1409,6 +1409,54 @@
         "name": "assets\\Fire Burning_1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ladder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ladder.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/GDevelop examples/Platformer/Level/Ladder.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tilemap/level_1/level1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\tilemap\\level_1\\level1.json",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap/level_1/bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tilemap\\level_1\\bg.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/platform-box-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\platform-box-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap/level_1/bg x2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tilemap\\level_1\\bg x2.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6477,6 +6525,55 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "Platform",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "platform",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\box-16x16-green.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [
@@ -6485,6 +6582,23 @@
       "objects": [
         {
           "name": "Skeleton"
+        }
+      ]
+    },
+    {
+      "name": "Items",
+      "objects": [
+        {
+          "name": "HealPotion"
+        },
+        {
+          "name": "FireBurning"
+        },
+        {
+          "name": "FlyPotion"
+        },
+        {
+          "name": "CoinsBag"
         }
       ]
     }
@@ -8138,8 +8252,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Level_321",
-      "name": "Level 1",
+      "mangledName": "Level_32Test_323",
+      "name": "Level Test 3",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
@@ -8149,37 +8263,19 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 16,
+        "gridHeight": 16,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": true,
-        "zoomFactor": 1.4600000000000022,
+        "snap": false,
+        "zoomFactor": 3.459999999999997,
         "windowMask": false
       },
-      "objectsGroups": [
-        {
-          "name": "Items",
-          "objects": [
-            {
-              "name": "HealPotion"
-            },
-            {
-              "name": "FireBurning"
-            },
-            {
-              "name": "FlyPotion"
-            },
-            {
-              "name": "CoinsBag"
-            }
-          ]
-        }
-      ],
+      "objectsGroups": [],
       "variables": [
         {
           "name": "PlayerInventory",
@@ -9575,6 +9671,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 4,
+          "layer": "",
+          "locked": false,
+          "name": "LadderBox",
+          "persistentUuid": "b2a03481-88fe-48fb-ab8d-1947f37e7686",
+          "width": 20,
+          "x": 95.6688461303711,
+          "y": -12.043025970458984,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -9668,6 +9780,96 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "d8e41c59b542b12039379632dfdfa42e3891aadcb9f3fbdcebf134d79068daef",
+          "name": "Ladder",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.02500000037252903,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Ladder.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "LadderBox",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "ladder",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\spawn-point.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -9703,6 +9905,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9734,6 +9937,14 @@
                   },
                   "parameters": [
                     "EnemySpawnPoint"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "LadderBox"
                   ]
                 }
               ]
@@ -10524,6 +10735,1184 @@
         {
           "name": "Health",
           "type": "Health::Health"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
+    {
+      "b": 41,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Level_321",
+      "name": "Level 1",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 68,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 38,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.35000000000000164,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "EventBus",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Current",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Events",
+              "type": "array",
+              "children": []
+            },
+            {
+              "name": "Index",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "name": "PlayerInventory",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Current",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Index",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Items",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Level1",
+          "persistentUuid": "755c763b-82c3-403a-8f40-493f46b302b6",
+          "width": 0,
+          "x": 0,
+          "y": -160,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Player",
+          "persistentUuid": "ec918927-bf10-49d8-91a2-a772a1551591",
+          "width": 0,
+          "x": 32,
+          "y": -48,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Background",
+          "persistentUuid": "b4aedcb6-e040-468c-bdc6-308578ff3e0d",
+          "width": 0,
+          "x": 0,
+          "y": -160,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "f25af5b7-ab5e-4a74-ae25-60f8df2b5c0f",
+          "width": 320,
+          "x": 0,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "0319eed3-4151-4a69-ab5e-d132a921cf9f",
+          "width": 16,
+          "x": 0,
+          "y": 16,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1040,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "3b251cfd-8ae1-41a4-b979-a15d4882b808",
+          "width": 32,
+          "x": -32,
+          "y": -480,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1007,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "441c01ab-2574-46b7-a87d-a7673b638148",
+          "width": 32,
+          "x": 1600,
+          "y": -448,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "64e268f1-4864-4f20-959f-09a41447e385",
+          "width": 320,
+          "x": 64,
+          "y": 144,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 175,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "a0f4690b-25b2-427f-8165-27570750b956",
+          "width": 32,
+          "x": 368,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "bc6124fd-f487-4b2b-9a05-cc03ddba8f1c",
+          "width": 497,
+          "x": 384,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 192,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "2f36eaf4-b8db-4d42-83f7-3fe49ffac79b",
+          "width": 189,
+          "x": 625,
+          "y": -160,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "0b281bc7-ddde-4c2f-9336-ed913352c06d",
+          "width": 388,
+          "x": 12,
+          "y": 256,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "04e7d038-f85b-41cb-9434-05791503d7b8",
+          "width": 1263,
+          "x": 64,
+          "y": 384,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "068bc23e-7cbb-4af9-92f6-6a354df03c34",
+          "width": 221,
+          "x": 1376,
+          "y": 384,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 49,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "b863bf8d-a6f6-49b4-85a1-16882f0cf979",
+          "width": 1588,
+          "x": 14,
+          "y": 511,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 494,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "8f49c62b-3ad9-4d01-b13d-45ec1688f8be",
+          "width": 20,
+          "x": 1583,
+          "y": 9,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 79,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "08c6fd59-9ca0-482e-b1e9-ab70082a8645",
+          "width": 672,
+          "x": 928,
+          "y": 0,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 259,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "080e81e8-2d44-40a0-bea6-8dba607ad137",
+          "width": 30,
+          "x": 465,
+          "y": 30,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "3a7a84e7-97e8-451d-8682-93adf101af92",
+          "width": 63,
+          "x": 432,
+          "y": 143,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "6aa89f1f-9fdc-44cc-8002-6ec739f226ee",
+          "width": 273,
+          "x": 544,
+          "y": 145,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "61d985cd-a6d8-4b82-bf61-284c630533d0",
+          "width": 704,
+          "x": 880,
+          "y": 143,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "6f4e850c-f7e8-4c97-8985-2b2eb269eb4f",
+          "width": 338,
+          "x": 639,
+          "y": 80,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "fd7aff81-6cf3-4586-a106-ad20f78280e0",
+          "width": 370,
+          "x": 495,
+          "y": 254,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "ba385b5c-a2f1-4e5b-8dea-58f4ff676401",
+          "width": 703,
+          "x": 832,
+          "y": 223,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 33,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "5d6a53a1-3346-4315-9602-17e91ae166b0",
+          "width": 674,
+          "x": 911,
+          "y": 303,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 103,
+          "layer": "",
+          "locked": false,
+          "name": "Platform",
+          "persistentUuid": "5722fa2e-fe1d-4c7f-8f1a-77f34ce59635",
+          "width": 125,
+          "x": 738,
+          "y": 412,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "Level1",
+          "tags": "",
+          "type": "TileMap::TileMap",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "tilemapJsonFile": "assets\\tilemap\\level_1\\level1.json",
+            "tilesetJsonFile": "",
+            "tilemapAtlasImage": "assets\\img\\external\\PixelPlatformerSet2v.1.1\\main_lev_buildA.png",
+            "displayMode": "visible",
+            "layerIndex": 0,
+            "animationSpeedScale": 1,
+            "animationFps": 4
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Background",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "bg",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\tilemap\\level_1\\bg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Always"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FixCamera"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "0",
+                "-160",
+                "1593",
+                "550",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Platform"
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 52,
+          "colorG": 122,
+          "colorR": 252,
+          "creationTime": 0,
+          "name": "Initialize Inventory",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Repeat",
+                  "repeatExpression": "3",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "EventBus.Events",
+                        "\"Inventory/Add/HealPotion\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "EventBus.Events",
+                        "\"Inventory/Add/FireBall\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "EventBus.Events",
+                        "\"Inventory/Add/FlyPotion\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "EventBus.Events",
+                        "\"Inventory/Add/CoinsBag\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 116,
+          "colorG": 116,
+          "colorR": 116,
+          "creationTime": 0,
+          "name": "EventBus",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "colorB": 116,
+              "colorG": 116,
+              "colorR": 116,
+              "creationTime": 0,
+              "name": "Handle",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "EventBus.Events",
+                  "valueIteratorVariableName": "EventBus.Current",
+                  "keyIteratorVariableName": "EventBus.Index",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Camera Shake",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.CurrentEvent",
+                            "=",
+                            "\"Camera/Shake10\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "CameraShake::CameraShake"
+                          },
+                          "parameters": [
+                            "",
+                            "10",
+                            "10",
+                            "\"\"",
+                            "",
+                            "0.5",
+                            "0",
+                            "0",
+                            "0.08",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.CurrentEvent",
+                            "=",
+                            "\"Camera/Shake5\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "CameraShake::CameraShake"
+                          },
+                          "parameters": [
+                            "",
+                            "5",
+                            "5",
+                            "\"\"",
+                            "",
+                            "0.5",
+                            "0",
+                            "0",
+                            "0.08",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.CurrentEvent",
+                            "=",
+                            "\"Camera/Shake3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "CameraShake::CameraShake"
+                          },
+                          "parameters": [
+                            "",
+                            "3",
+                            "3",
+                            "\"\"",
+                            "",
+                            "0.5",
+                            "0",
+                            "0",
+                            "0.08",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Items",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.Current",
+                            "=",
+                            "\"Inventory/Add/HealPotion\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Items::ItemToInventory"
+                          },
+                          "parameters": [
+                            "",
+                            "HealPotion",
+                            "\"heal_potion\"",
+                            "ItemCount",
+                            "0",
+                            "\"player_inventory\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Inventory::SetMaximum"
+                          },
+                          "parameters": [
+                            "",
+                            "\"player_inventory\"",
+                            "\"heal_potion\"",
+                            "99"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.Current",
+                            "=",
+                            "\"Inventory/Add/FlyPotion\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Items::ItemToInventory"
+                          },
+                          "parameters": [
+                            "",
+                            "FlyPotion",
+                            "\"fly_potion\"",
+                            "ItemCount",
+                            "0",
+                            "\"player_inventory\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Inventory::SetMaximum"
+                          },
+                          "parameters": [
+                            "",
+                            "\"player_inventory\"",
+                            "\"fly_potion\"",
+                            "99"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.Current",
+                            "=",
+                            "\"Inventory/Add/FireBall\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Items::ItemToInventory"
+                          },
+                          "parameters": [
+                            "",
+                            "FireBurning",
+                            "\"fire_ball\"",
+                            "ItemCount",
+                            "0",
+                            "\"player_inventory\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Inventory::SetMaximum"
+                          },
+                          "parameters": [
+                            "",
+                            "\"player_inventory\"",
+                            "\"fire_ball\"",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "EventBus.Current",
+                            "=",
+                            "\"Inventory/Add/CoinsBag\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Items::ItemToInventory"
+                          },
+                          "parameters": [
+                            "",
+                            "CoinsBag",
+                            "\"coins_bag\"",
+                            "ItemCount",
+                            "0",
+                            "\"player_inventory\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Inventory::SetMaximum"
+                          },
+                          "parameters": [
+                            "",
+                            "\"player_inventory\"",
+                            "\"coins_bag\"",
+                            "99"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 116,
+              "colorG": 116,
+              "colorR": 116,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Clear",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "VariableClearChildren"
+                      },
+                      "parameters": [
+                        "EventBus.Events"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VariableClearChildren"
+                      },
+                      "parameters": [
+                        "EventBus.Current"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VariableClearChildren"
+                      },
+                      "parameters": [
+                        "EventBus.Index"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "InventoryEvents"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "SkeletonController"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PlayerController"
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 0,
+          "ambientLightColorG": 10108920,
+          "ambientLightColorR": 16,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 10486808,
+          "ambientLightColorG": 6042736,
+          "ambientLightColorR": 12259064,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash"
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health"
+        },
+        {
+          "name": "HorizontalTiledSpriteParallax",
+          "type": "Parallax::HorizontalTiledSpriteParallax"
         },
         {
           "name": "Platform",
@@ -12490,7 +13879,6 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -15069,7 +16457,6 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Render Items",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -15539,6 +16926,7 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Always",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -15714,6 +17102,7 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "On Use",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -16300,6 +17689,234 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "4ian",
+      "category": "",
+      "description": "Behaviors to animate Tiled Sprite objects in the background, following the camera with a parallax effect.",
+      "extensionNamespace": "",
+      "fullName": "Parallax for Tiled Sprite",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWltYWdlLW1vdmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUsM0gxOVYwTDI0LDVMMTksMTBWN0gxNVYzTTIxLDExLjk0VjE5QTIsMiAwIDAsMSAxOSwyMUg1QTIsMiAwIDAsMSAzLDE5VjVBMiwyIDAgMCwxIDUsM0gxMi4wNkMxMiwzLjMzIDEyLDMuNjcgMTIsNEE4LDggMCAwLDAgMjAsMTJDMjAuMzMsMTIgMjAuNjcsMTIgMjEsMTEuOTRNMTksMThMMTQuNSwxMkwxMSwxNi41TDguNSwxMy41TDUsMThIMTlaIiAvPjwvc3ZnPg==",
+      "name": "Parallax",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/image-move.svg",
+      "shortDescription": "Behaviors to animate Tiled Sprite objects in the background, following the camera with a parallax effect.",
+      "version": "1.0.1",
+      "origin": {
+        "identifier": "Parallax",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "parallax",
+        "tiled"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Move the image of a Tiled Sprite to follow the camera horizontally with a parallax effect. After adding this to an object, put the object on a layer that is not moving, behind the layer that is followed (for example, a layer called \"Background\").",
+          "fullName": "Horizontal Parallax for a Tiled Sprite",
+          "name": "HorizontalTiledSpriteParallax",
+          "objectType": "TiledSpriteObject::TiledSprite",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "doStepPostEvents",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::XOffset"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraX(Object.Behavior::PropertyFollowedLayer(), 0) * Object.Behavior::PropertyParallaxFactor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::Width"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraWidth(Object.Layer(), 0)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Parallax::HorizontalTiledSpriteParallax",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0.5",
+              "type": "Number",
+              "label": "Parallax factor (speed for the parallax, usually between 0 and 1)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "ParallaxFactor"
+            },
+            {
+              "value": "",
+              "type": "String",
+              "label": "Layer to be followed (leave empty for the base layer)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "FollowedLayer"
+            }
+          ]
+        },
+        {
+          "description": "Move the image of a Tiled Sprite to follow the camera vertically with a parallax effect. After adding this to an object, put the object on a layer that is not moving, behind the layer that is followed (for example, a layer called \"Background\").",
+          "fullName": "Vertical Parallax for a Tiled Sprite",
+          "name": "VerticalTiledSpriteParallax",
+          "objectType": "TiledSpriteObject::TiledSprite",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "doStepPostEvents",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::YOffset"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraY(Object.Behavior::PropertyFollowedLayer(), 0) * Object.Behavior::PropertyParallaxFactor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::Height"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraHeight(Object.Layer(), 0)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Parallax::VerticalTiledSpriteParallax",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0.5",
+              "type": "Number",
+              "label": "Parallax factor (speed for the parallax, usually between 0 and 1)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "ParallaxFactor"
+            },
+            {
+              "value": "",
+              "type": "String",
+              "label": "Layer to be followed (leave empty for the base layer)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "FollowedLayer"
+            }
+          ]
+        }
+      ]
+    },
     {
       "author": "",
       "category": "",
