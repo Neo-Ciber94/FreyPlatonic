@@ -1457,6 +1457,154 @@
         "name": "assets\\tilemap\\level_1\\bg x2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small12.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small14.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small18.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small20.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/img/external/Slime/slime_small/slime_small11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\img\\external\\Slime\\slime_small\\slime_small11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dust Particle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dust Particle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Adventure Pack/FX/Dust Particle.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dust Particle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Dust Particle.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6152,6 +6300,31 @@
     },
     {
       "assetStoreId": "",
+      "name": "ItemName",
+      "tags": "",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "[ItemName]",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.fnt",
+        "textureAtlasResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
       "name": "FireBall",
       "tags": "",
       "type": "Sprite",
@@ -6416,31 +6589,6 @@
       ]
     },
     {
-      "assetStoreId": "",
-      "name": "ItemName",
-      "tags": "",
-      "type": "BitmapText::BitmapTextObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "content": {
-        "text": "[ItemName]",
-        "opacity": 255,
-        "scale": 1,
-        "fontSize": 20,
-        "tint": "255;255;255",
-        "bitmapFontResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.fnt",
-        "textureAtlasResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.png",
-        "align": "left",
-        "wordWrap": true
-      }
-    },
-    {
       "assetStoreId": "09bcc754c420d857e92bae06aeb0cc5c2105e320c1588640f569edc8e2447238",
       "name": "Coin",
       "tags": "",
@@ -6536,10 +6684,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ],
@@ -6574,6 +6722,332 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 16,
+      "name": "Wall",
+      "tags": "",
+      "texture": "assets\\Wall Mid.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 16,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "NormalPlatform",
+          "canBeGrabbed": true,
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Small_Slime",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Direction",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "folded": true,
+          "name": "BaseAttack",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "folded": true,
+          "name": "Attacking",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "State",
+          "type": "string",
+          "value": "\"idle\""
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 1,
+          "DamageCooldown": 0,
+          "MaxHealth": 1,
+          "IsJustDamaged": false,
+          "CooldownActive": false
+        },
+        {
+          "acceleration": 20,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": true,
+          "deceleration": 100000000,
+          "gravity": 1000,
+          "ignoreDefaultControls": true,
+          "jumpSpeed": 600,
+          "jumpSustainTime": 0.2,
+          "ladderClimbingSpeed": 150,
+          "maxFallingSpeed": 700,
+          "maxSpeed": 20,
+          "name": "PlatformerObject",
+          "slopeMaxAngle": 0,
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "useLegacyTrajectory": false,
+          "xGrabTolerance": 10,
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.15000000596046448,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "damaged",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\img\\external\\Slime\\slime_small\\slime_small14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 20,
+      "emitterForceMin": 10,
+      "flow": 20,
+      "maxParticleNb": 5,
+      "name": "PuffParticles",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 231,
+      "particleBlue2": 148,
+      "particleGravityX": 0,
+      "particleGravityY": 100,
+      "particleGreen1": 231,
+      "particleGreen2": 148,
+      "particleLifeTimeMax": 0.30000001192092896,
+      "particleLifeTimeMin": 0.30000001192092896,
+      "particleRed1": 231,
+      "particleRed2": 148,
+      "particleSize1": 80,
+      "particleSize2": 150,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 3,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tags": "",
+      "tank": 5,
+      "textureParticleName": "assets\\Dust Particle.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 10,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsGroups": [
@@ -6582,6 +7056,9 @@
       "objects": [
         {
           "name": "Skeleton"
+        },
+        {
+          "name": "Small_Slime"
         }
       ]
     },
@@ -6676,9 +7153,588 @@
           "value": 0
         }
       ]
+    },
+    {
+      "name": "RNG",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Number",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Temp",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "Num",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Str",
+          "type": "string",
+          "value": ""
+        }
+      ]
     }
   ],
   "layouts": [
+    {
+      "b": 186,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Test_32Level_32_45_32Slime",
+      "name": "Test Level - Slime",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 180,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 255,
+      "uiSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.7250000000000014,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "Wall",
+          "persistentUuid": "b4cac626-1514-47f6-8413-983a2f97661d",
+          "width": 928,
+          "x": -192,
+          "y": 144,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Player",
+          "persistentUuid": "e05f181c-4060-4cca-95f9-b4b24bc9c8d4",
+          "width": 0,
+          "x": 32,
+          "y": 96,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 112,
+          "layer": "",
+          "locked": false,
+          "name": "Wall",
+          "persistentUuid": "5c8fab98-7a23-426b-a401-eff4af03c492",
+          "width": 16,
+          "x": -192,
+          "y": 32,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 112,
+          "layer": "",
+          "locked": false,
+          "name": "Wall",
+          "persistentUuid": "c5f00bfd-fd0c-4841-810d-c1a087258767",
+          "width": 16,
+          "x": 720,
+          "y": 32,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 20,
+          "layer": "",
+          "locked": false,
+          "name": "MoveLeft",
+          "persistentUuid": "ad6e1f2b-59ab-46f3-8665-b35532c9aba3",
+          "width": 20,
+          "x": 697,
+          "y": 121,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 16,
+          "layer": "",
+          "locked": false,
+          "name": "MoveRight",
+          "persistentUuid": "83be9495-b13b-49e4-9e23-98860243fcb2",
+          "width": 16,
+          "x": -175,
+          "y": 126,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "cee2696022cdf545bc84d269a56471c5d75e58f8b5af46bc46c5732ec3b728f1",
+          "name": "DustParticle",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.02500000037252903,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Dust Particle.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "GlobalEvents"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FixCamera"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "-195",
+                "33",
+                "738",
+                "160",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Spawner",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"SlimeSpawnTimer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Repeat",
+                  "repeatExpression": "10",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Always"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Small_Slime",
+                            "RandomInRange(-160, 700)",
+                            "30",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "State",
+                            "=",
+                            "\"walk\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Temp.Num",
+                            "=",
+                            "RandomInRange(1, 100)"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarGlobal"
+                              },
+                              "parameters": [
+                                "Temp.Num",
+                                ">=",
+                                "50"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Small_Slime",
+                                "Direction",
+                                "=",
+                                "-1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarGlobal"
+                              },
+                              "parameters": [
+                                "Temp.Num",
+                                "<",
+                                "50"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Small_Slime",
+                                "Direction",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"SlimeSpawnTimer\"",
+                    ">=",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"SlimeSpawnTimer\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "RandomInRange(0, 100)",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Small_Slime",
+                        "RandomInRange(-160, 700)",
+                        "30",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Small_Slime",
+                        "State",
+                        "=",
+                        "\"walk\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "RNG.Number",
+                            ">=",
+                            "50"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Direction",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "RNG.Number",
+                            ">",
+                            "50"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Direction",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PlayerController"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "SlimeController"
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 11280128,
+          "ambientLightColorG": 7417080,
+          "ambientLightColorR": 567476,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 11057136,
+          "ambientLightColorG": 11057136,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash"
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
+    },
     {
       "b": 43,
       "disableInputWhenNotFocused": true,
@@ -6755,7 +7811,7 @@
           "height": 16,
           "layer": "",
           "locked": false,
-          "name": "NewTiledSprite",
+          "name": "Wall",
           "persistentUuid": "7a513b81-fe35-47a7-842e-0a46ef5a5722",
           "width": 368,
           "x": 0,
@@ -6771,7 +7827,7 @@
           "height": 16,
           "layer": "",
           "locked": false,
-          "name": "NewTiledSprite",
+          "name": "Wall",
           "persistentUuid": "2674fca6-8e1a-4ad5-8700-44889c5d21ee",
           "width": 48,
           "x": 368,
@@ -6787,7 +7843,7 @@
           "height": 16,
           "layer": "",
           "locked": false,
-          "name": "NewTiledSprite",
+          "name": "Wall",
           "persistentUuid": "ccc19e7e-91a1-497a-a3d9-babae014cd1d",
           "width": 160,
           "x": -160,
@@ -6803,7 +7859,7 @@
           "height": 16,
           "layer": "",
           "locked": false,
-          "name": "NewTiledSprite",
+          "name": "Wall",
           "persistentUuid": "41981d60-80be-424b-a7ac-7e1d09ea39b9",
           "width": 160,
           "x": 48,
@@ -6911,26 +7967,6 @@
         }
       ],
       "objects": [
-        {
-          "assetStoreId": "",
-          "height": 16,
-          "name": "NewTiledSprite",
-          "tags": "",
-          "texture": "assets\\Wall Mid.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 16,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "NormalPlatform",
-              "canBeGrabbed": true,
-              "yGrabOffset": 0
-            }
-          ]
-        },
         {
           "assetStoreId": "",
           "name": "NewTileMap",
@@ -11927,11 +12963,77 @@
           "type": "Tween::TweenBehavior"
         }
       ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Empty",
+      "name": "Empty",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {},
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 16777215,
+          "ambientLightColorG": 0,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash"
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     }
   ],
   "externalEvents": [
     {
-      "associatedLayout": "Level 1",
+      "associatedLayout": "Empty",
       "lastChangeTimeStamp": 0,
       "name": "PlayerController",
       "events": [
@@ -12846,6 +13948,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Attacking",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -13817,7 +14920,7 @@
       ]
     },
     {
-      "associatedLayout": "Level 1",
+      "associatedLayout": "Empty",
       "lastChangeTimeStamp": 0,
       "name": "SkeletonController",
       "events": [
@@ -16457,6 +17560,7 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Render Items",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -17102,7 +18206,6 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "On Use",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -17594,7 +18697,7 @@
       ]
     },
     {
-      "associatedLayout": "Level 1",
+      "associatedLayout": "Empty",
       "lastChangeTimeStamp": 0,
       "name": "CameraShakeEvents",
       "events": [
@@ -17686,237 +18789,777 @@
           ]
         }
       ]
-    }
-  ],
-  "eventsFunctionsExtensions": [
+    },
     {
-      "author": "4ian",
-      "category": "",
-      "description": "Behaviors to animate Tiled Sprite objects in the background, following the camera with a parallax effect.",
-      "extensionNamespace": "",
-      "fullName": "Parallax for Tiled Sprite",
-      "helpPath": "",
-      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWltYWdlLW1vdmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUsM0gxOVYwTDI0LDVMMTksMTBWN0gxNVYzTTIxLDExLjk0VjE5QTIsMiAwIDAsMSAxOSwyMUg1QTIsMiAwIDAsMSAzLDE5VjVBMiwyIDAgMCwxIDUsM0gxMi4wNkMxMiwzLjMzIDEyLDMuNjcgMTIsNEE4LDggMCAwLDAgMjAsMTJDMjAuMzMsMTIgMjAuNjcsMTIgMjEsMTEuOTRNMTksMThMMTQuNSwxMkwxMSwxNi41TDguNSwxMy41TDUsMThIMTlaIiAvPjwvc3ZnPg==",
-      "name": "Parallax",
-      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/image-move.svg",
-      "shortDescription": "Behaviors to animate Tiled Sprite objects in the background, following the camera with a parallax effect.",
-      "version": "1.0.1",
-      "origin": {
-        "identifier": "Parallax",
-        "name": "gdevelop-extension-store"
-      },
-      "tags": [
-        "parallax",
-        "tiled"
-      ],
-      "authorIds": [
-        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
-      ],
-      "dependencies": [],
-      "eventsFunctions": [],
-      "eventsBasedBehaviors": [
+      "associatedLayout": "Empty",
+      "lastChangeTimeStamp": 0,
+      "name": "SlimeController",
+      "events": [
         {
-          "description": "Move the image of a Tiled Sprite to follow the camera horizontally with a parallax effect. After adding this to an object, put the object on a layer that is not moving, behind the layer that is followed (for example, a layer called \"Background\").",
-          "fullName": "Horizontal Parallax for a Tiled Sprite",
-          "name": "HorizontalTiledSpriteParallax",
-          "objectType": "TiledSpriteObject::TiledSprite",
-          "eventsFunctions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Movement",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
-              "group": "",
-              "name": "doStepPostEvents",
-              "private": false,
-              "sentence": "",
-              "events": [
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "TiledSpriteObject::XOffset"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "CameraX(Object.Behavior::PropertyFollowedLayer(), 0) * Object.Behavior::PropertyParallaxFactor()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreX"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TiledSpriteObject::Width"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "CameraWidth(Object.Layer(), 0)"
-                      ]
-                    }
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "Health",
+                    ""
                   ]
                 }
               ],
-              "parameters": [
+              "actions": [],
+              "events": [
                 {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "TiledSpriteObject::TiledSprite",
-                  "type": "object"
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Initial state is walking",
+                  "comment2": ""
                 },
                 {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Parallax::HorizontalTiledSpriteParallax",
-                  "type": "behavior"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Small_Slime",
+                        "State",
+                        "=",
+                        "\"walk\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Small_Slime",
+                        "State",
+                        "=",
+                        "\"walk\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Small_Slime",
+                        "\"walk\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Direction",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Direction",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Change Direction",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "MoveRight",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Direction",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "MoveLeft",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Direction",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
                 }
-              ],
-              "objectGroups": []
+              ]
             }
           ],
-          "propertyDescriptors": [
-            {
-              "value": "0.5",
-              "type": "Number",
-              "label": "Parallax factor (speed for the parallax, usually between 0 and 1)",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "ParallaxFactor"
-            },
-            {
-              "value": "",
-              "type": "String",
-              "label": "Layer to be followed (leave empty for the base layer)",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "FollowedLayer"
-            }
-          ]
+          "parameters": []
         },
         {
-          "description": "Move the image of a Tiled Sprite to follow the camera vertically with a parallax effect. After adding this to an object, put the object on a layer that is not moving, behind the layer that is followed (for example, a layer called \"Background\").",
-          "fullName": "Vertical Parallax for a Tiled Sprite",
-          "name": "VerticalTiledSpriteParallax",
-          "objectType": "TiledSpriteObject::TiledSprite",
-          "eventsFunctions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Damaged",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "description": "",
-              "fullName": "",
-              "functionType": "Action",
-              "group": "",
-              "name": "doStepPostEvents",
-              "private": false,
-              "sentence": "",
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsJustDamaged"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "State",
+                    "=",
+                    "\"damaged\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "State",
+                    "=",
+                    "\"damaged\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "\"damaged\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimationName"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "\"damaged\""
+                  ]
+                }
+              ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
+                  "conditions": [
                     {
                       "type": {
-                        "value": "TiledSpriteObject::YOffset"
+                        "value": "AnimationEnded"
                       },
                       "parameters": [
-                        "Object",
-                        "=",
-                        "CameraY(Object.Behavior::PropertyFollowedLayer(), 0) * Object.Behavior::PropertyParallaxFactor()"
+                        "Small_Slime"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::IsDead"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Health",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "State",
+                            "=",
+                            "\"dead\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "MettreY"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TiledSpriteObject::Height"
-                      },
-                      "parameters": [
-                        "Object",
-                        "=",
-                        "CameraHeight(Object.Layer(), 0)"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Health::Health::IsDead"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "Health",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Small_Slime",
+                            "State",
+                            "=",
+                            "\"walk\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 }
-              ],
-              "parameters": [
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Object",
-                  "longDescription": "",
-                  "name": "Object",
-                  "optional": false,
-                  "supplementaryInformation": "TiledSpriteObject::TiledSprite",
-                  "type": "object"
-                },
-                {
-                  "codeOnly": false,
-                  "defaultValue": "",
-                  "description": "Behavior",
-                  "longDescription": "",
-                  "name": "Behavior",
-                  "optional": false,
-                  "supplementaryInformation": "Parallax::VerticalTiledSpriteParallax",
-                  "type": "behavior"
-                }
-              ],
-              "objectGroups": []
+              ]
             }
           ],
-          "propertyDescriptors": [
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Dead",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "value": "0.5",
-              "type": "Number",
-              "label": "Parallax factor (speed for the parallax, usually between 0 and 1)",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "ParallaxFactor"
-            },
-            {
-              "value": "",
-              "type": "String",
-              "label": "Layer to be followed (leave empty for the base layer)",
-              "description": "",
-              "group": "",
-              "extraInformation": [],
-              "hidden": false,
-              "name": "FollowedLayer"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "State",
+                    "=",
+                    "\"dead\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "PuffParticles",
+                    "Small_Slime.CenterX()",
+                    "Small_Slime.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    ""
+                  ]
+                }
+              ]
             }
-          ]
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Attack",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "Player",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "Player",
+                    "0",
+                    "200 * Small_Slime.Variable(Direction)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "Small_Slime.Variable(BaseAttack)",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Player.X()",
+                        ">",
+                        "Small_Slime.X()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Small_Slime",
+                        "Direction",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Player.X()",
+                        "<",
+                        "Small_Slime.X()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Small_Slime",
+                        "Direction",
+                        "=",
+                        "-1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Debug",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Small_Slime",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "DebugText",
+                            "Small_Slime.X()",
+                            "Small_Slime.Y() - 16",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "DebugText",
+                            "Small_Slime"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "DebugText",
+                            "Small_Slime",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "DebugText",
+                            "=",
+                            "Small_Slime.X()",
+                            "=",
+                            "Small_Slime.Y() - 16"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BitmapText::BitmapTextObject::SetText"
+                          },
+                          "parameters": [
+                            "DebugText",
+                            "=",
+                            "\"State: \" +Small_Slime.VariableString(State)"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::IsDead"
+                              },
+                              "parameters": [
+                                "Small_Slime",
+                                "Health",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "DebugText",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ]
     },
+    {
+      "associatedLayout": "Empty",
+      "lastChangeTimeStamp": 0,
+      "name": "GlobalEvents",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Random",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Always"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "RNG.Number",
+                    "=",
+                    "RandomInRange(0, 1000)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "eventsFunctionsExtensions": [
     {
       "author": "",
       "category": "",
@@ -18260,6 +19903,252 @@
         }
       ],
       "eventsBasedBehaviors": []
+    },
+    {
+      "author": "",
+      "category": "",
+      "description": "",
+      "extensionNamespace": "",
+      "fullName": "",
+      "helpPath": "",
+      "iconUrl": "",
+      "name": "Conditions",
+      "previewIconUrl": "",
+      "shortDescription": "",
+      "version": "",
+      "tags": [],
+      "authorIds": [],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": []
+    },
+    {
+      "author": "4ian",
+      "category": "",
+      "description": "Behaviors to animate Tiled Sprite objects in the background, following the camera with a parallax effect.",
+      "extensionNamespace": "",
+      "fullName": "Parallax for Tiled Sprite",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWltYWdlLW1vdmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUsM0gxOVYwTDI0LDVMMTksMTBWN0gxNVYzTTIxLDExLjk0VjE5QTIsMiAwIDAsMSAxOSwyMUg1QTIsMiAwIDAsMSAzLDE5VjVBMiwyIDAgMCwxIDUsM0gxMi4wNkMxMiwzLjMzIDEyLDMuNjcgMTIsNEE4LDggMCAwLDAgMjAsMTJDMjAuMzMsMTIgMjAuNjcsMTIgMjEsMTEuOTRNMTksMThMMTQuNSwxMkwxMSwxNi41TDguNSwxMy41TDUsMThIMTlaIiAvPjwvc3ZnPg==",
+      "name": "Parallax",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/image-move.svg",
+      "shortDescription": "Behaviors to animate Tiled Sprite objects in the background, following the camera with a parallax effect.",
+      "version": "1.0.1",
+      "origin": {
+        "identifier": "Parallax",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "parallax",
+        "tiled"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Move the image of a Tiled Sprite to follow the camera horizontally with a parallax effect. After adding this to an object, put the object on a layer that is not moving, behind the layer that is followed (for example, a layer called \"Background\").",
+          "fullName": "Horizontal Parallax for a Tiled Sprite",
+          "name": "HorizontalTiledSpriteParallax",
+          "objectType": "TiledSpriteObject::TiledSprite",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "doStepPostEvents",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::XOffset"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraX(Object.Behavior::PropertyFollowedLayer(), 0) * Object.Behavior::PropertyParallaxFactor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::Width"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraWidth(Object.Layer(), 0)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Parallax::HorizontalTiledSpriteParallax",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0.5",
+              "type": "Number",
+              "label": "Parallax factor (speed for the parallax, usually between 0 and 1)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "ParallaxFactor"
+            },
+            {
+              "value": "",
+              "type": "String",
+              "label": "Layer to be followed (leave empty for the base layer)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "FollowedLayer"
+            }
+          ]
+        },
+        {
+          "description": "Move the image of a Tiled Sprite to follow the camera vertically with a parallax effect. After adding this to an object, put the object on a layer that is not moving, behind the layer that is followed (for example, a layer called \"Background\").",
+          "fullName": "Vertical Parallax for a Tiled Sprite",
+          "name": "VerticalTiledSpriteParallax",
+          "objectType": "TiledSpriteObject::TiledSprite",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "group": "",
+              "name": "doStepPostEvents",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::YOffset"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraY(Object.Behavior::PropertyFollowedLayer(), 0) * Object.Behavior::PropertyParallaxFactor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::Height"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "CameraHeight(Object.Layer(), 0)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "Parallax::VerticalTiledSpriteParallax",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0.5",
+              "type": "Number",
+              "label": "Parallax factor (speed for the parallax, usually between 0 and 1)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "ParallaxFactor"
+            },
+            {
+              "value": "",
+              "type": "String",
+              "label": "Layer to be followed (leave empty for the base layer)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "FollowedLayer"
+            }
+          ]
+        }
+      ]
     },
     {
       "author": "westboy31, Tristan Rhodes (https://victrisgames.itch.io/)",
