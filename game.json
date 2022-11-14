@@ -8565,6 +8565,18 @@
           "name": "BaseAttack",
           "type": "number",
           "value": 1
+        },
+        {
+          "folded": true,
+          "name": "State",
+          "type": "string",
+          "value": "walk"
+        },
+        {
+          "folded": true,
+          "name": "IsInit",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -12211,7 +12223,7 @@
       "folded": true,
       "name": "Debug",
       "type": "boolean",
-      "value": false
+      "value": true
     },
     {
       "folded": true,
@@ -12262,6 +12274,12 @@
         },
         {
           "name": "Coins",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "DeathCount",
           "type": "number",
           "value": 0
         }
@@ -13192,7 +13210,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "SkeletonController"
+          "target": "Skeleton"
         },
         {
           "type": "BuiltinCommonInstructions::Link",
@@ -13291,7 +13309,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 2.4062142439335683,
+        "zoomFactor": 1.78121424393357,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -14373,7 +14391,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 3.459999999999997,
+        "zoomFactor": 0.6350000000000016,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -16136,7 +16154,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Debug",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18013,7 +18030,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.000000000000001,
+        "zoomFactor": 0.5250000000000007,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -18042,8 +18059,8 @@
           "name": "Player",
           "persistentUuid": "2333b8b6-bd03-4deb-acbb-282701aa04e4",
           "width": 0,
-          "x": -193,
-          "y": -451,
+          "x": 84,
+          "y": -450,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -18312,8 +18329,8 @@
           "name": "MoveLeft",
           "persistentUuid": "d59489e6-2f66-4610-adc7-db2f95ffb15d",
           "width": 30,
-          "x": 162,
-          "y": -66,
+          "x": 194,
+          "y": -65,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -18356,8 +18373,8 @@
           "layer": "",
           "name": "Floor2",
           "persistentUuid": "38efce76-3ff4-41ef-974c-dbe844098ebd",
-          "width": 146,
-          "x": 597,
+          "width": 204,
+          "x": 539,
           "y": -55,
           "zOrder": 8,
           "numberProperties": [],
@@ -18522,7 +18539,7 @@
           "name": "MoveRight",
           "persistentUuid": "d1b5a460-6ac8-4f4d-b8a6-6bbbb1eb915c",
           "width": 34,
-          "x": 586,
+          "x": 541,
           "y": -89,
           "zOrder": 6,
           "numberProperties": [],
@@ -18776,7 +18793,7 @@
           "layer": "",
           "name": "Floor2",
           "persistentUuid": "6a487481-0a49-479b-a5d1-8ab21b9b3cc5",
-          "width": 102,
+          "width": 129,
           "x": 86,
           "y": -33,
           "zOrder": 8,
@@ -18836,7 +18853,7 @@
           "layer": "",
           "name": "Floor2",
           "persistentUuid": "67671571-06fd-4c94-bf00-e76abdb370e3",
-          "width": 151,
+          "width": 184,
           "x": 298,
           "y": -43,
           "zOrder": 8,
@@ -19110,6 +19127,696 @@
           "x": -275,
           "y": -400,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Small_Slime",
+          "persistentUuid": "d438b299-b385-489d-b916-b5ceea9a1dce",
+          "width": 0,
+          "x": -321,
+          "y": -410,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Small_Slime",
+          "persistentUuid": "9a5893a2-eeb4-4189-965f-183173d76811",
+          "width": 0,
+          "x": 347,
+          "y": -404,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "86f1f60b-6b67-4c2c-8130-cda13f9834e9",
+          "width": 0,
+          "x": -225,
+          "y": -201,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "1da13ec9-e192-4edb-92c9-6563b5715508",
+          "width": 0,
+          "x": -125,
+          "y": 182,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "37a1cce4-4d3f-4d0c-91fc-ee1ff3dae326",
+          "width": 0,
+          "x": 654,
+          "y": -319,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "f8eb5dc6-05ec-4870-9078-ad777d3a53cd",
+          "width": 0,
+          "x": 356.92303466796875,
+          "y": -327.84613037109375,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "5d8fb783-280e-44bc-99c6-5cd0a1561cfa",
+          "width": 0,
+          "x": 573,
+          "y": 176,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "b21dee5e-df76-43bb-a4f2-8cc124d662e4",
+          "width": 0,
+          "x": 1112,
+          "y": 170,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "f8b6a49a-0f33-4a2c-ac03-2fb830820cde",
+          "width": 0,
+          "x": 1038,
+          "y": 20,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 24,
+          "layer": "",
+          "name": "Floor2",
+          "persistentUuid": "567fe437-6eea-498a-b95c-8d93f00e641a",
+          "width": 551,
+          "x": 744,
+          "y": -201,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "name": "MoveLeft",
+          "persistentUuid": "858a4e05-6862-4330-9b1b-98b858b32fca",
+          "width": 30,
+          "x": 1259,
+          "y": -240,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "",
+          "name": "MoveRight",
+          "persistentUuid": "60cb976c-953c-4be2-bb35-df2b6ea69837",
+          "width": 34,
+          "x": 741,
+          "y": -239,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SlimeSpawner",
+          "persistentUuid": "da7d9178-5eb9-476e-9b66-b6d3cdeae565",
+          "width": 0,
+          "x": 659,
+          "y": -91,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "056c481e-8b61-4ddb-8530-a8ff10205aa3",
+          "width": 0,
+          "x": 204,
+          "y": -251,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "06e5012e-3976-4dd9-9b78-1a02522caa1e",
+          "width": 0,
+          "x": -186,
+          "y": -28,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "8b574802-eee0-4b9b-88f0-20e0f9b1b755",
+          "width": 0,
+          "x": 583,
+          "y": 42,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "e5427bbd-2621-4f07-9553-b618b341012a",
+          "width": 0,
+          "x": 852,
+          "y": -241,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "7250c8e1-6a2c-468e-b1c6-cd6c0f199623",
+          "width": 0,
+          "x": 1193,
+          "y": -240,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "c45e3fff-9041-47ba-91be-410b8f095332",
+          "width": 0,
+          "x": 1305,
+          "y": -47,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "b1de12b1-ba08-4418-b6e7-9548c786d94f",
+          "width": 0,
+          "x": 843,
+          "y": 179,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "e9ef18e6-4f65-4a6f-b30b-cfc14b21465d",
+          "width": 0,
+          "x": 1271,
+          "y": 172,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "4603b109-77f6-4ca0-a8fc-778a55f5baf3",
+          "width": 0,
+          "x": 1410,
+          "y": 120,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "3890b2af-cb5d-4844-a62e-2f3423fabc1e",
+          "width": 0,
+          "x": 815,
+          "y": -18,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "146e94c9-5623-4236-bb51-750ec5eb5fb2",
+          "width": 0,
+          "x": 375,
+          "y": -74,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "b59b157b-2bc3-42d3-a101-dd973e620734",
+          "width": 0,
+          "x": 81,
+          "y": -187,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "b2386647-0a83-4b27-972d-42417ef3cc2a",
+          "width": 0,
+          "x": 10,
+          "y": -103,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "464d14b0-a9ac-4027-98b7-ce4e6ebf665d",
+          "width": 0,
+          "x": 275,
+          "y": -12,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "eab4a39a-33ee-4f7d-aba5-dabd72c11d2f",
+          "width": 0,
+          "x": 277,
+          "y": 186,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkeletonSpawner",
+          "persistentUuid": "b9bc2e35-2add-4689-a60d-2eb2ac59042e",
+          "width": 0,
+          "x": -278,
+          "y": 182,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "ac923ec5-fde2-4d20-8fa6-fb13860a7efc",
+          "width": 0,
+          "x": 147,
+          "y": -70,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "1423f41a-4e1f-4331-82f3-12ac8142a420",
+          "width": 0,
+          "x": 58,
+          "y": 58,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "857d9e0c-b463-4c36-a1d4-84eaa2637f63",
+          "width": 0,
+          "x": 154,
+          "y": 18,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "41597e83-1f42-45f6-a0a4-d8853a753f64",
+          "width": 0,
+          "x": 1111,
+          "y": -261,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "3cb4fb44-ae2f-4fa7-a6ec-1c2be5e7528c",
+          "width": 0,
+          "x": -111,
+          "y": 111,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "4867f9fd-f6f5-4a1d-ae66-e1789705b5c2",
+          "width": 0,
+          "x": 1362,
+          "y": -46,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "b8583468-374b-4454-aed2-88b4a92ac161",
+          "width": 0,
+          "x": 1281,
+          "y": 60,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "fd2a08ff-9644-4d6d-976c-e56ffba70b9d",
+          "width": 0,
+          "x": 1433,
+          "y": 116,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "e83d1a90-3e60-44d6-a182-37f95a9254e3",
+          "width": 0,
+          "x": 918,
+          "y": 189,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "b61c46f4-6b45-44d2-804f-35faf174775c",
+          "width": 0,
+          "x": 686,
+          "y": 189,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "577034f0-d903-4562-8b83-d9ee790b7f71",
+          "width": 0,
+          "x": 1335,
+          "y": 188,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "f1ff1be3-ab7e-4fed-b681-362c610be500",
+          "width": 0,
+          "x": 422,
+          "y": 189,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "dd4474ce-2a0f-4873-8b1e-3863fc5635f2",
+          "width": 0,
+          "x": 163,
+          "y": 190,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "9a3d9c43-32f0-4d48-8fd0-c3f8831b1c3e",
+          "width": 0,
+          "x": 527,
+          "y": 40,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "33a8cdd9-7e0b-4583-9a6b-e94aeec0226d",
+          "width": 0,
+          "x": -250,
+          "y": -34,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "901e8568-7a31-483b-ac9c-6c82d2de93e1",
+          "width": 0,
+          "x": -146,
+          "y": -199,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "5b44cc2b-39ee-4538-8573-1fdb6488bb02",
+          "width": 0,
+          "x": 935,
+          "y": -264,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29001,8 +29708,8 @@
           "behaviors": [
             {
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "platformType": "NormalPlatform",
               "canBeGrabbed": true,
               "yGrabOffset": 0
             }
@@ -29052,12 +29759,12 @@
             {
               "name": "ObjectSpawner",
               "type": "ObjectSpawner::ObjectSpawner",
-              "SpawnPeriod": 3,
+              "SpawnPeriod": 5,
               "OffsetX": 0,
               "OffsetY": 0,
               "JustSpawnedAnObject": false,
               "MaxQuantityReached": false,
-              "MaxQuantity": 10
+              "MaxQuantity": 3
             }
           ],
           "animations": [
@@ -29072,6 +29779,58 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets\\img\\blue-box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "SkeletonSpawner",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ObjectSpawner",
+              "type": "ObjectSpawner::ObjectSpawner",
+              "SpawnPeriod": 10,
+              "OffsetX": 0,
+              "OffsetY": 0,
+              "JustSpawnedAnObject": false,
+              "MaxQuantityReached": false,
+              "MaxQuantity": 2
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\img\\red-box.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -29163,6 +29922,88 @@
           "conditions": [
             {
               "type": {
+                "value": "BuiltinCommonInstructions::Always"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::SpawnObject"
+              },
+              "parameters": [
+                "SkeletonSpawner",
+                "ObjectSpawner",
+                "Skeleton",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::ObjectWasJustSpawned"
+              },
+              "parameters": [
+                "SlimeSpawner",
+                "ObjectSpawner",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Small_Slime",
+                "State",
+                "=",
+                "\"walk\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectSpawner::ObjectSpawner::ObjectWasJustSpawned"
+              },
+              "parameters": [
+                "SkeletonSpawner",
+                "ObjectSpawner",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Skeleton",
+                "State",
+                "=",
+                "\"walk\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "DepartScene"
               },
               "parameters": [
@@ -29176,23 +30017,15 @@
                 "value": "Cache"
               },
               "parameters": [
-                "MoveLeft"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "MoveRight"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
                 "SlimeSpawner"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SkeletonSpawner"
               ]
             }
           ]
@@ -29209,7 +30042,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "SkeletonController"
+          "target": "Skeleton"
         },
         {
           "type": "BuiltinCommonInstructions::Link",
@@ -29358,7 +30191,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -30218,7 +31050,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Attacking",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -30252,7 +31083,6 @@
                   "actions": [],
                   "events": [
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -30407,7 +31237,6 @@
                       ]
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -30652,6 +31481,16 @@
                                 "0.08",
                                 "",
                                 ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarGlobal"
+                              },
+                              "parameters": [
+                                "Player.DeathCount",
+                                "+",
+                                "1"
                               ]
                             }
                           ]
@@ -31208,7 +32047,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "HP",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -31231,7 +32069,7 @@
                         "value": "Health::Health::SetHealth"
                       },
                       "parameters": [
-                        "Player",
+                        "Skeleton",
                         "Health",
                         "GlobalVariable(Defaults.BaseSkeletonHP)",
                         ""
@@ -31247,12 +32085,12 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -31718,79 +32556,10 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Attacking",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
-                {
-                  "folded": true,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "DepartScene"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::ForEach",
-                      "object": "Skeleton",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "DetectionArea",
-                            "Skeleton.CenterX() - 16",
-                            "Skeleton.CenterY()",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "LinkedObjects::LinkObjects"
-                          },
-                          "parameters": [
-                            "",
-                            "Skeleton",
-                            "DetectionArea"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "SkeletonHitBox",
-                            "-9999",
-                            "-9999",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "LinkedObjects::LinkObjects"
-                          },
-                          "parameters": [
-                            "",
-                            "Skeleton",
-                            "SkeletonHitBox"
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -32366,6 +33135,7 @@
                           ]
                         },
                         {
+                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -32998,7 +33768,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Damaged",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -33021,6 +33790,7 @@
                   "actions": [],
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -33292,6 +34062,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Debug",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -33339,12 +34110,34 @@
                         },
                         {
                           "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "DetectionArea",
+                            "Skeleton.X()",
+                            "Skeleton.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "LinkedObjects::LinkObjects"
                           },
                           "parameters": [
                             "",
                             "Skeleton",
                             "DebugText"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Skeleton",
+                            "DetectionArea"
                           ]
                         }
                       ]
@@ -35138,7 +35931,36 @@
           "name": "Startup",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "IsInit",
+                    "="
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Small_Slime",
+                    "Direction",
+                    "=",
+                    "ToNumber(ToString(Choose::RandomNumber(\"1,-1\")))"
+                  ]
+                }
+              ]
+            }
+          ],
           "parameters": []
         },
         {
@@ -35618,7 +36440,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Attack",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -35657,8 +36478,8 @@
                   },
                   "parameters": [
                     "Player",
-                    "0",
-                    "200 * Small_Slime.Variable(Direction)",
+                    "400 * Small_Slime.Variable(Direction)",
+                    "-400",
                     ""
                   ]
                 },
@@ -35982,7 +36803,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Debug",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -36239,6 +37059,22 @@
                       "parameters": [
                         "Platform"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "MoveLeft"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "MoveRight"
+                      ]
                     }
                   ]
                 }
@@ -36279,6 +37115,1672 @@
                   ]
                 }
               ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Debug",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "DetectionArea",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Level 1",
+      "lastChangeTimeStamp": 0,
+      "name": "Skeleton",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Skeleton",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Initialization",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Skeleton",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "IsInit",
+                            "False"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "IsInit",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "DetectionArea",
+                            "Skeleton.X()",
+                            "Skeleton.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Skeleton",
+                            "DetectionArea"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "SkeletonHitBox",
+                            "Skeleton.X()",
+                            "Skeleton.Y()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Skeleton",
+                            "SkeletonHitBox"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "DebugText",
+                            "Skeleton.CenterX()",
+                            "Skeleton.CenterY() - 32",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "Skeleton",
+                            "DebugText"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Health::Health::SetHealth"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Health",
+                            "GlobalVariable(Defaults.BaseSkeletonHP)",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Movement",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsDead"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"walk\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"walk\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "\"walking\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Direction",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "MoveLeft",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "State",
+                                "=",
+                                "\"idle\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "3"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "State",
+                                "=",
+                                "\"walk\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "Direction",
+                                "=",
+                                "-1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Direction",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "PlatformerObject"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "MoveRight",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "State",
+                                "=",
+                                "\"idle\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "3"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "State",
+                                "=",
+                                "\"walk\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "Direction",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Direction",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "Direction",
+                        "=",
+                        "-1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "Direction",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Skeleton",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "DetectionArea",
+                        "Skeleton",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Direction",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "DetectionArea",
+                            "=",
+                            "Skeleton.CenterX() - 16",
+                            "=",
+                            "Skeleton.CenterY()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Direction",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "DetectionArea",
+                            "=",
+                            "Skeleton.CenterX() - (16*3)",
+                            "=",
+                            "Skeleton.CenterY()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "State",
+                            "=",
+                            "\"walk\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Health::Health::IsDead"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "DetectionArea",
+                                "Player",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Distance"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "Player",
+                                "36",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeColor"
+                              },
+                              "parameters": [
+                                "DetectionArea",
+                                "\"255;0;0\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "State",
+                                "=",
+                                "\"insight\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "DetectionArea",
+                                "Player",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "Distance"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "Player",
+                                "36",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeColor"
+                              },
+                              "parameters": [
+                                "DetectionArea",
+                                "\"255;255;0\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Attacking",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"insight\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"attack\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Skeleton.X()",
+                            ">",
+                            "Player.X()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Direction",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Skeleton.X()",
+                            "<",
+                            "Player.X()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Direction",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "State",
+                            "=",
+                            "\"attack\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Distance"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "Player",
+                            "36",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "DetectionArea",
+                            "Player",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "State",
+                            "=",
+                            "\"walk\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"attack\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "\"attacking\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "SkeletonHitBox",
+                            "Skeleton",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "Sprite"
+                                  },
+                                  "parameters": [
+                                    "Skeleton",
+                                    "=",
+                                    "7"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Sprite"
+                                  },
+                                  "parameters": [
+                                    "Skeleton",
+                                    "=",
+                                    "8"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "SkeletonHitBox",
+                                "=",
+                                "Skeleton.PointX(\"HitPoint\")",
+                                "=",
+                                "Skeleton.PointY(\"HitPoint\")"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Skeleton",
+                                    "Player",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Health::Health::IsDead"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    "Health",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "Blocking",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Health::Health::Hit"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "Health",
+                                        "Skeleton.Variable(BaseAttack)",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "AddForceXY"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "200 * Skeleton.Variable(Direction)",
+                                        "0",
+                                        ""
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "folded": true,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "Blocking",
+                                        "True"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Or"
+                                          },
+                                          "parameters": [],
+                                          "subInstructions": [
+                                            {
+                                              "type": {
+                                                "value": "Sprite"
+                                              },
+                                              "parameters": [
+                                                "Skeleton",
+                                                "=",
+                                                "7"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "Sprite"
+                                              },
+                                              "parameters": [
+                                                "Skeleton",
+                                                "=",
+                                                "8"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "Sprite"
+                                              },
+                                              "parameters": [
+                                                "Skeleton",
+                                                "=",
+                                                "9"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "AddForceXY"
+                                          },
+                                          "parameters": [
+                                            "Player",
+                                            "1200 * Skeleton.Variable(Direction)",
+                                            "0",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SceneVariablePushString"
+                                          },
+                                          "parameters": [
+                                            "EventBus.Events",
+                                            "\"Camera/Shake3\""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "SkeletonHitBox",
+                                    "Player",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "Health::Health::IsDead"
+                                  },
+                                  "parameters": [
+                                    "Player",
+                                    "Health",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "Blocking",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Health::Health::Hit"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "Health",
+                                        "Skeleton.Variable(BaseAttack)",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "AddForceXY"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "200 * Skeleton.Variable(Direction)",
+                                        "0",
+                                        ""
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "folded": true,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "ObjectVariableAsBoolean"
+                                      },
+                                      "parameters": [
+                                        "Player",
+                                        "Blocking",
+                                        "True"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Or"
+                                          },
+                                          "parameters": [],
+                                          "subInstructions": [
+                                            {
+                                              "type": {
+                                                "value": "Sprite"
+                                              },
+                                              "parameters": [
+                                                "Skeleton",
+                                                "=",
+                                                "7"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "Sprite"
+                                              },
+                                              "parameters": [
+                                                "Skeleton",
+                                                "=",
+                                                "8"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "Sprite"
+                                              },
+                                              "parameters": [
+                                                "Skeleton",
+                                                "=",
+                                                "9"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "AddForceXY"
+                                          },
+                                          "parameters": [
+                                            "Player",
+                                            "1200 * Skeleton.Variable(Direction)",
+                                            "0",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SceneVariablePushString"
+                                          },
+                                          "parameters": [
+                                            "EventBus.Events",
+                                            "\"Camera/Shake3\""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Sprite"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "=",
+                                "9"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "SkeletonHitBox",
+                                "=",
+                                "-9999",
+                                "=",
+                                "-9999"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimationEnded"
+                              },
+                              "parameters": [
+                                "Skeleton"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "AnimationName"
+                                  },
+                                  "parameters": [
+                                    "Skeleton",
+                                    "\"attacking\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarObjetTxt"
+                                  },
+                                  "parameters": [
+                                    "Skeleton",
+                                    "State",
+                                    "=",
+                                    "\"insight\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Damaged",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsJustDamaged"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "Health",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"damaged\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"damaged\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "\"damaged\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimationEnded"
+                          },
+                          "parameters": [
+                            "Skeleton"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "AnimationName"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "\"damaged\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Skeleton",
+                                "State",
+                                "=",
+                                "\"insight\""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Dead",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsDead"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "Health",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"dead\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "State",
+                        "=",
+                        "\"dead\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "Skeleton",
+                        "\"dying\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimationEnded"
+                          },
+                          "parameters": [
+                            "Skeleton"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Player.Coins",
+                            "+",
+                            "Skeleton.Variable(Coins)"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "Debug",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Skeleton",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "DebugText",
+                        "Skeleton",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Debug",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "DebugText",
+                        "=",
+                        "Skeleton.CenterX()",
+                        "=",
+                        "Skeleton.CenterY() - 32"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BitmapText::BitmapTextObject::SetText"
+                      },
+                      "parameters": [
+                        "DebugText",
+                        "=",
+                        "ToString(Skeleton.Health::Health()) + \"/\" + GlobalVariableString(Defaults.BaseSkeletonHP)+ \", state: \" + Skeleton.VariableString(State)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -36287,6 +38789,97 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "Ulises Freitas <ulises.freitas@gmail.com>",
+      "category": "General",
+      "description": "In an expression, use `Choose::RandomString` or `Choose::RandomNumber` and set the values you want to randomize separated by commas.\n\nSee also [Array Tools extension](https://wiki.gdevelop.io/gdevelop5/extensions/array-tools/reference) for more advanced usages.",
+      "extensionNamespace": "",
+      "fullName": "Choose a random value",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWRpY2UtbXVsdGlwbGUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkuNzgsM0gxMS4yMkMxMC41NSwzIDEwLDMuNTUgMTAsNC4yMlY4SDE2VjE0SDE5Ljc4QzIwLjQ1LDE0IDIxLDEzLjQ1IDIxLDEyLjc4VjQuMjJDMjEsMy41NSAyMC40NSwzIDE5Ljc4LDNNMTIuNDQsNi42N0MxMS43Niw2LjY3IDExLjIxLDYuMTIgMTEuMjEsNS40NEMxMS4yMSw0Ljc2IDExLjc2LDQuMjEgMTIuNDQsNC4yMUExLjIzLDEuMjMgMCAwLDEgMTMuNjcsNS40NEMxMy42Nyw2LjEyIDEzLjEyLDYuNjcgMTIuNDQsNi42N00xOC41NiwxMi43OEMxNy44OCwxMi43OSAxNy4zMywxMi4yNCAxNy4zMiwxMS41NkMxNy4zMSwxMC44OCAxNy44NiwxMC4zMyAxOC41NCwxMC4zMkMxOS4yMiwxMC4zMSAxOS43NywxMC44NiAxOS43OCwxMS41NkMxOS43NywxMi4yMyAxOS4yMywxMi43NyAxOC41NiwxMi43OE0xOC41Niw2LjY3QzE3Ljg4LDYuNjggMTcuMzMsNi4xMyAxNy4zMiw1LjQ1QzE3LjMxLDQuNzcgMTcuODYsNC4yMiAxOC41NCw0LjIxQzE5LjIyLDQuMiAxOS43Nyw0Ljc1IDE5Ljc4LDUuNDRDMTkuNzgsNi4xMiAxOS4yNCw2LjY2IDE4LjU2LDYuNjdNNC4yMiwxMEgxMi43OEExLjIyLDEuMjIgMCAwLDEgMTQsMTEuMjJWMTkuNzhDMTQsMjAuNDUgMTMuNDUsMjEgMTIuNzgsMjFINC4yMkMzLjU1LDIxIDMsMjAuNDUgMywxOS43OFYxMS4yMkMzLDEwLjU1IDMuNTUsMTAgNC4yMiwxME04LjUsMTQuMjhDNy44MywxNC4yOCA3LjI4LDE0LjgzIDcuMjgsMTUuNUM3LjI4LDE2LjE3IDcuODMsMTYuNzIgOC41LDE2LjcyQzkuMTcsMTYuNzIgOS43MiwxNi4xNyA5LjcyLDE1LjVBMS4yMiwxLjIyIDAgMCwwIDguNSwxNC4yOE01LjQ0LDExLjIyQzQuNzcsMTEuMjIgNC4yMiwxMS43NyA0LjIyLDEyLjQ0QTEuMjIsMS4yMiAwIDAsMCA1LjQ0LDEzLjY2QzYuMTEsMTMuNjYgNi42NiwxMy4xMSA2LjY2LDEyLjQ0VjEyLjQ0QzYuNjYsMTEuNzcgNi4xMSwxMS4yMiA1LjQ0LDExLjIyTTExLjU1LDE3LjMzQzEwLjg4LDE3LjMzIDEwLjMzLDE3Ljg4IDEwLjMzLDE4LjU1QzEwLjMzLDE5LjIyIDEwLjg4LDE5Ljc3IDExLjU1LDE5Ljc3QTEuMjIsMS4yMiAwIDAsMCAxMi43NywxOC41NUgxMi43N0MxMi43NywxNy44OCAxMi4yMywxNy4zNCAxMS41NiwxNy4zM0gxMS41NVoiIC8+PC9zdmc+",
+      "name": "Choose",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/dice-multiple.svg",
+      "shortDescription": "Choose a random value in a list of strings or numbers.",
+      "version": "1.0.0",
+      "origin": {
+        "identifier": "Choose",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "choose",
+        "random"
+      ],
+      "authorIds": [
+        "ZShmW1xkW7WWl9AkB78VITJMiTw1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Choose randomly between comma-separated strings.",
+          "fullName": "Choose randomly between comma-separated strings",
+          "functionType": "StringExpression",
+          "group": "",
+          "name": "RandomString",
+          "private": false,
+          "sentence": "Choose between these values: _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "/** @type {string[]} */\nconst choices = eventsFunctionContext.getArgument(\"ChoicesString\").split(',');\neventsFunctionContext.returnValue = choices[Math.floor(Math.random() * choices.length)];\n",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "The string containing all options to choose randomly from, separated by commas",
+              "longDescription": "Example: \"option1,option2,option3\"",
+              "name": "ChoicesString",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Choose a number randomly between comma-separated numbers.",
+          "fullName": "Choose a number randomly between comma-separated numbers",
+          "functionType": "Expression",
+          "group": "",
+          "name": "RandomNumber",
+          "private": false,
+          "sentence": "Choose between these values: _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "/** @type {string[]} */\nconst choices = eventsFunctionContext.getArgument(\"NumbersChoiceString\").split(',');\neventsFunctionContext.returnValue = parseFloat(choices[Math.floor(Math.random() * choices.length)]);\n",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "The string containing all numbers to choose randomly from, separated by commas",
+              "longDescription": "Example: \"10,20,30\"",
+              "name": "NumbersChoiceString",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
+    },
     {
       "author": "",
       "category": "",
