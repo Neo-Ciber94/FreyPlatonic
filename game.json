@@ -6773,6 +6773,24 @@
         "name": "assets\\Grass_Background.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Menu Button_Default.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Menu Button_Default.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Menu Button_Active.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Menu Button_Active.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6838,14 +6856,14 @@
           "ShieldDuration": 5
         },
         {
+          "acceleration": 380,
+          "deceleration": 1e+42,
+          "gravity": 380,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "gravity": 380,
           "jumpSpeed": 340,
-          "acceleration": 120,
           "ladderClimbingSpeed": 150,
           "maxSpeed": 120,
-          "deceleration": 1e+34,
           "canGoDownFromJumpthru": true,
           "jumpSustainTime": 1,
           "maxFallingSpeed": 1000,
@@ -8624,12 +8642,12 @@
           "CooldownActive": false
         },
         {
-          "gravity": 200,
+          "deceleration": 1e+50,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "gravity": 200,
           "canGoDownFromJumpthru": false,
           "acceleration": 50,
-          "deceleration": 1000000,
           "maxSpeed": 50,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
@@ -11107,7 +11125,18 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "BlendingMode",
+          "name": "Effect",
+          "doubleParameters": {
+            "blendmode": 2,
+            "opacity": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -11403,7 +11432,21 @@
       "tags": "",
       "type": "BitmapText::BitmapTextObject",
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 10,
+            "innerStrength": 0,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "content": {
         "text": "9999",
@@ -11471,7 +11514,7 @@
         }
       ],
       "content": {
-        "text": "[ItemName]",
+        "text": "",
         "opacity": 255,
         "scale": 1,
         "fontSize": 20,
@@ -11982,14 +12025,14 @@
           "CooldownActive": false
         },
         {
+          "acceleration": 20,
+          "deceleration": 1e+50,
           "gravity": 200,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 20,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": true,
-          "deceleration": 100000000,
           "ignoreDefaultControls": true,
           "jumpSpeed": 600,
           "jumpSustainTime": 0.2,
@@ -12303,7 +12346,14 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "type",
+          "type": "string",
+          "value": "revive"
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -12503,7 +12553,6 @@
       "value": false
     },
     {
-      "folded": true,
       "name": "Defaults",
       "type": "structure",
       "children": [
@@ -12518,6 +12567,11 @@
           "name": "BaseSkeletonHP",
           "type": "number",
           "value": 3
+        },
+        {
+          "name": "DeathCountBonus",
+          "type": "number",
+          "value": 2
         }
       ]
     },
@@ -12564,7 +12618,7 @@
           "folded": true,
           "name": "DeathCountBonus",
           "type": "number",
-          "value": 2
+          "value": 0
         }
       ]
     },
@@ -13141,6 +13195,18 @@
           "type": "Health::Health"
         },
         {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -13557,6 +13623,18 @@
         {
           "name": "Health",
           "type": "Health::Health"
+        },
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
         },
         {
           "name": "Platform",
@@ -14639,6 +14717,18 @@
         {
           "name": "Health",
           "type": "Health::Health"
+        },
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
         },
         {
           "name": "Platform",
@@ -17054,6 +17144,18 @@
           "type": "Health::Health"
         },
         {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -18205,6 +18307,18 @@
           "type": "Parallax::HorizontalTiledSpriteParallax"
         },
         {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -18280,6 +18394,18 @@
           "type": "Health::Health"
         },
         {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "scaleX": 100,
+          "scaleY": 100
+        },
+        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
         },
@@ -18313,7 +18439,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.21000000000000132,
+        "zoomFactor": 0.8600000000000019,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -19814,7 +19940,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "Debug",
           "name": "SkeletonSpawner",
           "persistentUuid": "b59b157b-2bc3-42d3-a101-dd973e620734",
           "width": 0,
@@ -30502,10 +30628,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "Jumpthru",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "Jumpthru",
               "yGrabOffset": 0
             }
           ]
@@ -30719,7 +30845,6 @@
           "colorG": 122,
           "colorR": 252,
           "creationTime": 0,
-          "folded": true,
           "name": "Initialize Inventory",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -30756,7 +30881,6 @@
           "colorG": 13,
           "colorR": 117,
           "creationTime": 0,
-          "folded": true,
           "name": "Bonuses",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -30775,7 +30899,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -30783,7 +30906,7 @@
                     "value": "BuiltinCommonInstructions::CompareNumbers"
                   },
                   "parameters": [
-                    "mod(GlobalVariable(Player.DeathCount), 2)",
+                    "mod(GlobalVariable(Player.DeathCount), 5)",
                     "=",
                     "0"
                   ]
@@ -30902,7 +31025,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -30920,7 +31042,7 @@
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Repeat",
-                      "repeatExpression": "20",
+                      "repeatExpression": "5",
                       "conditions": [],
                       "actions": [
                         {
@@ -30966,19 +31088,29 @@
               "comment2": ""
             },
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "GlobalVariable(Player.DeathCount)",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
               "actions": [
                 {
                   "type": {
-                    "value": "PlatformBehavior::Acceleration"
+                    "value": "AddForceXY"
                   },
                   "parameters": [
-                    "Small_Slime",
-                    "PlatformerObject",
-                    "=",
-                    "3000"
+                    "Enemy",
+                    "Enemy.Variable(Direction) * (clamp(GlobalVariable(Player.DeathCount)-10, 0, 100) / 30)",
+                    "0",
+                    "1"
                   ]
                 }
               ]
@@ -30991,6 +31123,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Game Over",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -31015,7 +31148,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "5"
+                    "2"
                   ]
                 },
                 {
@@ -31071,12 +31204,12 @@
       ],
       "layers": [
         {
-          "ambientLightColorB": 150995058,
+          "ambientLightColorB": 9207504,
           "ambientLightColorG": 6050880,
-          "ambientLightColorR": 14406072,
+          "ambientLightColorR": 17365784,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "name": "BG",
+          "name": "Debug",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -31174,7 +31307,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.9749999999999979,
+        "zoomFactor": 1.2999999999999994,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -31293,8 +31426,8 @@
           "name": "GameTitle",
           "persistentUuid": "749b1d6f-8d84-46cf-93c2-b7ae0d9e3b99",
           "width": 0,
-          "x": 88,
-          "y": 42,
+          "x": 85,
+          "y": 29,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -31308,9 +31441,24 @@
           "name": "StartButton",
           "persistentUuid": "04515dcc-98e6-44ac-b0a6-8c619554dedf",
           "width": 0,
-          "x": 143,
-          "y": 77,
+          "x": 138,
+          "y": 65,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "176f0d93-d0e1-4e97-98b9-f5f72ca12df7",
+          "width": 0,
+          "x": -983,
+          "y": 46,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -31505,6 +31653,10 @@
           "type": "Health::Health"
         },
         {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
           "name": "Physics2",
           "type": "Physics2::Physics2Behavior",
           "gravityX": 0,
@@ -31546,10 +31698,25 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 2.3499999999999965,
+        "zoomFactor": 2.324999999999996,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Button",
+          "objects": [
+            {
+              "name": "RestartBtn"
+            },
+            {
+              "name": "ReviveBtn"
+            },
+            {
+              "name": "MenuButton"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -31644,29 +31811,14 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 28,
-          "layer": "",
-          "name": "MenuButton",
-          "persistentUuid": "17b1f427-c623-4ed1-b671-f4078e0e3b25",
-          "width": 127.55555725097656,
-          "x": 100.44444274902344,
-          "y": 72,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "name": "GameTitle",
           "persistentUuid": "749b1d6f-8d84-46cf-93c2-b7ae0d9e3b99",
           "width": 0,
-          "x": 81,
-          "y": 32,
+          "x": 90,
+          "y": 16,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -31676,13 +31828,73 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
-          "name": "StartButton",
+          "layer": "UI",
+          "name": "RestartText",
           "persistentUuid": "04515dcc-98e6-44ac-b0a6-8c619554dedf",
           "width": 0,
-          "x": 131,
-          "y": 64,
+          "x": 61,
+          "y": 53,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "ReviveText",
+          "persistentUuid": "93784c43-d764-46e0-ae35-5d55d99e7633",
+          "width": 0,
+          "x": 185,
+          "y": 54,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 28,
+          "layer": "",
+          "name": "RestartBtn",
+          "persistentUuid": "f7415b3a-61d6-42fd-aed8-31c5ec4e5913",
+          "width": 127.55555725097656,
+          "x": 27.444442749023438,
+          "y": 47,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 28,
+          "layer": "",
+          "name": "ReviveBtn",
+          "persistentUuid": "0f5aa3e6-7628-4b02-9d3c-714271e5af04",
+          "width": 127.55555725097656,
+          "x": 168.44444274902344,
+          "y": 47,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 10,
+          "layer": "",
+          "name": "CoinBtn",
+          "persistentUuid": "de0b4c19-a8fa-4981-ae74-acdb64700e0f",
+          "width": 10,
+          "x": 244,
+          "y": 55,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -31725,7 +31937,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "StartButton",
+          "name": "RestartText",
           "tags": "",
           "type": "BitmapText::BitmapTextObject",
           "variables": [],
@@ -31733,6 +31945,26 @@
           "behaviors": [],
           "content": {
             "text": "Restart",
+            "opacity": 255,
+            "scale": 1,
+            "fontSize": 20,
+            "tint": "255;255;255",
+            "bitmapFontResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.fnt",
+            "textureAtlasResourceName": "assets\\fonts\\Minecraft 16px\\minecraft-16.png",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "ReviveText",
+          "tags": "",
+          "type": "BitmapText::BitmapTextObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "Revive   100",
             "opacity": 255,
             "scale": 1,
             "fontSize": 20,
@@ -31757,6 +31989,197 @@
             "debugMode": false,
             "texture": ""
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "RestartBtn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Menu Button_Default.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Menu Button_Active.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "ReviveBtn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "BlackAndWhite",
+              "name": "Grayout",
+              "doubleParameters": {
+                "opacity": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Menu Button_Default.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Menu Button_Active.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "CoinBtn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Coin_Spin_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -31787,13 +32210,31 @@
             },
             {
               "type": {
-                "value": "Health::Health::SetCurrentHealth"
+                "value": "PlatformBehavior::JumpSpeed"
               },
               "parameters": [
                 "Player",
-                "Health",
-                "0",
-                ""
+                "PlatformerObject",
+                "=",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "MergedFullBackground",
+                "\"54;54;54\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::SetColor"
+              },
+              "parameters": [
+                "ParallaxBackgroundMountains",
+                "\"54;54;54\""
               ]
             }
           ]
@@ -31826,88 +32267,316 @@
           ]
         },
         {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "MenuButton",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "MenuButton",
-                "\"Active\""
-              ]
-            }
-          ],
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Buttons",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Restart",
+              "comment2": ""
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "MouseButtonPressed"
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
+                    "RestartBtn",
                     "",
-                    "Left"
+                    "",
+                    ""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "SetAnimationName"
                   },
                   "parameters": [
+                    "RestartBtn",
+                    "\"Active\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Player.BaseHP",
+                        "=",
+                        "GlobalVariable(Defaults.BasePlayerHP)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Player.DeathCount",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Player.DeathCountBonus",
+                        "=",
+                        "GlobalVariable(Defaults.DeathCountBonus)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Level 1\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Health::Health::Heal"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "GlobalVariable(Player.BaseHP)",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "RestartBtn",
                     "",
-                    "\"Level 1\"",
+                    "",
                     ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "RestartBtn",
+                    "\"Default\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Revive",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "GlobalVariable(Player.Coins)",
+                    ">=",
+                    "100"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EnableEffect"
+                  },
+                  "parameters": [
+                    "ReviveBtn",
+                    "\"Grayout\"",
+                    "no"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "ReviveBtn",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "ReviveBtn",
+                        "\"Active\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "ReviveBtn",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "ReviveBtn",
+                        "\"Default\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Level 1\"",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "Player.Coins",
+                            "-",
+                            "100"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "GlobalVariable(Player.Coins)",
+                    "<",
+                    "100"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EnableEffect"
+                  },
+                  "parameters": [
+                    "ReviveBtn",
+                    "\"Grayout\"",
+                    "yes"
                   ]
                 }
               ]
             }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "MenuButton",
-                "",
-                "",
-                ""
-              ]
-            }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "MenuButton",
-                "\"Default\""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Link",
@@ -31954,6 +32623,17 @@
           "followBaseLayerCamera": true,
           "isLightingLayer": true,
           "name": "Lighting",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 12414016,
+          "ambientLightColorG": 6050880,
+          "ambientLightColorR": 17402376,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "UI",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -32649,7 +33329,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "HP",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -36395,7 +37074,6 @@
                       ]
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -36473,17 +37151,6 @@
                         },
                         {
                           "type": {
-                            "value": "Inventory::Equip"
-                          },
-                          "parameters": [
-                            "",
-                            "\"player_inventory\"",
-                            "VariableString(PlayerInventory.Items[0])",
-                            "yes"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "BitmapText::BitmapTextObject::SetOpacity"
                           },
                           "parameters": [
@@ -36531,17 +37198,6 @@
                             "ItemSlots.Index",
                             "=",
                             "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Inventory::Equip"
-                          },
-                          "parameters": [
-                            "",
-                            "\"player_inventory\"",
-                            "VariableString(PlayerInventory.Items[1])",
-                            "yes"
                           ]
                         },
                         {
@@ -36597,17 +37253,6 @@
                         },
                         {
                           "type": {
-                            "value": "Inventory::Equip"
-                          },
-                          "parameters": [
-                            "",
-                            "\"player_inventory\"",
-                            "VariableString(PlayerInventory.Items[2])",
-                            "yes"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "BitmapText::BitmapTextObject::SetOpacity"
                           },
                           "parameters": [
@@ -36659,17 +37304,6 @@
                         },
                         {
                           "type": {
-                            "value": "Inventory::Equip"
-                          },
-                          "parameters": [
-                            "",
-                            "\"player_inventory\"",
-                            "VariableString(PlayerInventory.Items[3])",
-                            "yes"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "BitmapText::BitmapTextObject::SetOpacity"
                           },
                           "parameters": [
@@ -36688,6 +37322,23 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Inventory::Equip"
+                          },
+                          "parameters": [
+                            "",
+                            "\"player_inventory\"",
+                            "VariableString(PlayerInventory.Items[GlobalVariable(ItemSlots.Index)])",
+                            "yes"
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -36703,7 +37354,6 @@
                   "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::ForEachChildVariable",
                       "iterableVariableName": "PlayerInventory.Items",
                       "valueIteratorVariableName": "PlayerInventory.Current",
@@ -37416,7 +38066,7 @@
                               "parameters": [
                                 "Player.Health::Health()",
                                 "<",
-                                "GlobalVariable(Defaults.BasePlayerHP)"
+                                "GlobalVariable(Player.BaseHP)"
                               ]
                             }
                           ],
@@ -37843,7 +38493,6 @@
               "colorG": 116,
               "colorR": 116,
               "creationTime": 0,
-              "folded": true,
               "name": "EventBus",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -38765,8 +39414,8 @@
                   },
                   "parameters": [
                     "Player",
-                    "400 * Small_Slime.Variable(Direction)",
-                    "-400",
+                    "200 * Small_Slime.Variable(Direction) * -1",
+                    "0",
                     ""
                   ]
                 },
@@ -40773,7 +41422,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Damaged",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -41012,6 +41660,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Debug",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
