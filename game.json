@@ -12548,10 +12548,10 @@
       "effects": [],
       "behaviors": [
         {
-          "gravity": 500,
-          "maxFallingSpeed": 200,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "gravity": 500,
+          "maxFallingSpeed": 200,
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -12650,6 +12650,298 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "96f2c3e13226d98366da894f262fb2a3df0ee2864333a5b04ea006196bc7e716",
+      "name": "Bat",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Coins",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "folded": true,
+          "name": "IsInit",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "SpawnPos",
+          "type": "structure",
+          "children": [
+            {
+              "name": "X",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Y",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "State",
+          "type": "string",
+          "value": "idle"
+        },
+        {
+          "folded": true,
+          "name": "DetectionDistance",
+          "type": "number",
+          "value": 120
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 1,
+          "CurrentHealth": 0,
+          "MaxHealth": 1,
+          "DamageCooldown": 0,
+          "IsHealthJustDamaged": false,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "AllowOverHealing": false,
+          "HitAtLeastOnce": false,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ChanceToDodge": 0,
+          "DamageToBeApplied": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0,
+          "IsJustDodged": false,
+          "ShieldDamageTaken": 0,
+          "HealToBeApplied": 0
+        },
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement",
+          "Width": 25,
+          "Height": 25,
+          "Clockwise": true,
+          "HorizontalEdgeDuration": 4,
+          "VerticalEdgeDuration": 4,
+          "Left": 1,
+          "Top": 1,
+          "Progress": 1,
+          "OldX": 1,
+          "OldY": 1,
+          "Easing": "linear",
+          "InitialPosition": "Top-left corner",
+          "ToogleClockwise": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "Fly",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.16670000553131104,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bat_Fly_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.4399995803833,
+                        "y": 11.64000129699707
+                      },
+                      {
+                        "x": 21.200000762939453,
+                        "y": 11.400001525878906
+                      },
+                      {
+                        "x": 21.279998779296875,
+                        "y": 23.079999923706055
+                      },
+                      {
+                        "x": 9.520001411437988,
+                        "y": 23.240001678466797
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bat_Fly_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.4399995803833,
+                        "y": 11.64000129699707
+                      },
+                      {
+                        "x": 21.200000762939453,
+                        "y": 11.400001525878906
+                      },
+                      {
+                        "x": 21.279998779296875,
+                        "y": 23.079999923706055
+                      },
+                      {
+                        "x": 9.520001411437988,
+                        "y": 23.240001678466797
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bat_Fly_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.4399995803833,
+                        "y": 11.64000129699707
+                      },
+                      {
+                        "x": 21.200000762939453,
+                        "y": 11.400001525878906
+                      },
+                      {
+                        "x": 21.279998779296875,
+                        "y": 23.079999923706055
+                      },
+                      {
+                        "x": 9.520001411437988,
+                        "y": 23.240001678466797
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bat_Fly_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.4399995803833,
+                        "y": 11.64000129699707
+                      },
+                      {
+                        "x": 21.200000762939453,
+                        "y": 11.400001525878906
+                      },
+                      {
+                        "x": 21.279998779296875,
+                        "y": 23.079999923706055
+                      },
+                      {
+                        "x": 9.520001411437988,
+                        "y": 23.240001678466797
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bat_Fly_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9.4399995803833,
+                        "y": 11.64000129699707
+                      },
+                      {
+                        "x": 21.200000762939453,
+                        "y": 11.400001525878906
+                      },
+                      {
+                        "x": 21.279998779296875,
+                        "y": 23.079999923706055
+                      },
+                      {
+                        "x": 9.520001411437988,
+                        "y": 23.240001678466797
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [
@@ -12661,6 +12953,9 @@
         },
         {
           "name": "Small_Slime"
+        },
+        {
+          "name": "Bat"
         }
       ]
     },
@@ -12704,7 +12999,7 @@
       "folded": true,
       "name": "Debug",
       "type": "boolean",
-      "value": false
+      "value": true
     },
     {
       "name": "Defaults",
@@ -13380,6 +13675,10 @@
           "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
         {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -13812,6 +14111,10 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
         },
         {
           "name": "Tween",
@@ -14910,6 +15213,10 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
         },
         {
           "name": "Tween",
@@ -17341,6 +17648,10 @@
           "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
         {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -18508,6 +18819,10 @@
           "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
         {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -18599,6 +18914,10 @@
           "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
         {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -18624,7 +18943,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.3350000000000029,
+        "zoomFactor": 0.7600000000000021,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -19136,27 +19455,27 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Boxes",
-          "persistentUuid": "36a59853-a3ef-494b-9a68-f17dc825d04b",
+          "name": "Bat",
+          "persistentUuid": "03fcd176-ae33-4837-b8b0-fb14829c766b",
           "width": 0,
-          "x": 914,
-          "y": -446,
-          "zOrder": 20,
+          "x": 708,
+          "y": -470,
+          "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 24,
           "layer": "",
-          "name": "Wood",
-          "persistentUuid": "b50fabfb-9055-4bc0-8bd1-d00ca6aaef87",
-          "width": 0,
-          "x": 991,
-          "y": -431,
-          "zOrder": 21,
+          "name": "Floor3",
+          "persistentUuid": "5d718f11-9adf-440f-9b05-8c5e2565c642",
+          "width": 274,
+          "x": -981,
+          "y": -280,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -19167,10 +19486,10 @@
           "height": 0,
           "layer": "",
           "name": "House",
-          "persistentUuid": "3b783dc0-526f-4b26-ae6f-ef81540b7486",
+          "persistentUuid": "968a3841-acb0-4453-acde-ce81f0210492",
           "width": 0,
-          "x": 1091,
-          "y": -476,
+          "x": -797,
+          "y": -347,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -19182,11 +19501,41 @@
           "height": 0,
           "layer": "",
           "name": "Barrel",
-          "persistentUuid": "246175b8-ee80-4ea8-bbba-f81ceb2f5817",
+          "persistentUuid": "ac3ad6fa-b3a9-411c-9e75-9b32477a89ee",
           "width": 0,
-          "x": 1042,
-          "y": -430,
+          "x": -846,
+          "y": -301,
           "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Wood",
+          "persistentUuid": "15538ec6-7911-4e86-bf10-0b8fabdb44df",
+          "width": 0,
+          "x": -897,
+          "y": -302,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Boxes",
+          "persistentUuid": "4dc1c9dc-3615-4c57-ae09-cc935411e599",
+          "width": 0,
+          "x": -974,
+          "y": -317,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -21645,10 +21994,10 @@
               "yGrabOffset": 0
             },
             {
-              "gravity": 0,
-              "maxFallingSpeed": 0,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "gravity": 0,
+              "maxFallingSpeed": 0,
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -22197,115 +22546,6 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "Light.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "96f2c3e13226d98366da894f262fb2a3df0ee2864333a5b04ea006196bc7e716",
-          "name": "Bat",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Fly",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.16670000553131104,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Bat_Fly_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Bat_Fly_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Bat_Fly_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Bat_Fly_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Bat_Fly_6.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -30228,6 +30468,13 @@
             "includeConfig": 0
           },
           "target": "Destructables"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "BatController"
         }
       ],
       "layers": [
@@ -30316,6 +30563,10 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
         },
         {
           "name": "Tween",
@@ -30711,6 +30962,10 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
         },
         {
           "name": "Tween",
@@ -31720,6 +31975,10 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "RectangleMovement",
+          "type": "RectangleMovement::RectangleMovement"
         },
         {
           "name": "Tween",
@@ -40886,7 +41145,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Debug",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -40936,7 +41194,7 @@
                       "parameters": [
                         "DebugText",
                         "=",
-                        "ToString(Skeleton.Health::Health()) + \"/\" + GlobalVariableString(Defaults.BaseSkeletonHP)+ \", state: \" + Skeleton.VariableString(State)"
+                        "ToString(Skeleton.Health::Health()) + \"/\" + ToString(Skeleton.Health::MaxHealth()) + \", state: \" + Skeleton.VariableString(State)"
                       ]
                     }
                   ]
@@ -41088,9 +41346,1826 @@
           "parameters": []
         }
       ]
+    },
+    {
+      "associatedLayout": "Level 1",
+      "lastChangeTimeStamp": 0,
+      "name": "BatController",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Initialization",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "IsInit",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "IsInit",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "SpawnPos.X",
+                    "=",
+                    "Bat.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "SpawnPos.Y",
+                    "=",
+                    "Bat.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Crystal",
+                    "Bat.X()",
+                    "Bat.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "Crystal",
+                    "=",
+                    "100"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Debug",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "DebugText",
+                        "Bat.CenterX()",
+                        "Bat.CenterY() - 32",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::LinkObjects"
+                      },
+                      "parameters": [
+                        "",
+                        "Bat",
+                        "DebugText"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "States",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Player",
+                    "Bat.Variable(DetectionDistance)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"insight\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Player",
+                    "Bat.Variable(DetectionDistance)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"idle\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"idle\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"idle\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"idle\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"idle\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "DistanceBetweenPositions(Bat.X(), Bat.Y(), Bat.Variable(SpawnPos.X), Bat.Variable(SpawnPos.Y))",
+                        "<",
+                        "30"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "State",
+                        "=",
+                        "\"patrol\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"dead\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Movement",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"idle\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceVersPos"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Bat.Variable(SpawnPos.X)",
+                    "Bat.Variable(SpawnPos.Y)",
+                    "50",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"patrol\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "RectangleMovement",
+                    "yes"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "RectangleMovement::RectangleMovement::IsMovingLeft"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "RectangleMovement",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "RectangleMovement::RectangleMovement::IsMovingRight"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "RectangleMovement",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"patrol\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "RectangleMovement",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Bat.X() - Player.X()",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "Bat",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "Bat.X() - Player.X()",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Attack",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"insight\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceVers"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "Player",
+                    "100",
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "Player",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "1",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "sign(Bat.X() - Player.X()) * 2000",
+                        "RandomInRange(800, 1200)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Player",
+                        "sign(Bat.X() - Player.X()) * 400",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CameraShake::CameraShake"
+                      },
+                      "parameters": [
+                        "",
+                        "0.2",
+                        "0.2",
+                        "\"\"",
+                        "",
+                        "0.5",
+                        "0",
+                        "1",
+                        "0.08",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Dead",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Bat",
+                    "State",
+                    "=",
+                    "\"dead\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "PuffParticles",
+                    "Bat.CenterX()",
+                    "Bat.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bat",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Player.Coins",
+                    "+",
+                    "Bat.Variable(Coins)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Player.DeathCount",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Debug",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Bat",
+          "conditions": [
+            {
+              "type": {
+                "value": "LinkedObjects::PickObjectsLinkedTo"
+              },
+              "parameters": [
+                "",
+                "DebugText",
+                "Bat",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Debug",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "DebugText",
+                "=",
+                "Bat.CenterX()",
+                "=",
+                "Bat.CenterY() - 32"
+              ]
+            },
+            {
+              "type": {
+                "value": "BitmapText::BitmapTextObject::SetText"
+              },
+              "parameters": [
+                "DebugText",
+                "=",
+                "ToString(Bat.Health::Health()) + \"/\" + ToString(Bat.Health::MaxHealth()) + \", state: \" + Bat.VariableString(State)"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "VegeTato, D8H",
+      "category": "Visual effect",
+      "extensionNamespace": "",
+      "fullName": "3D Flip",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWZsaXAtaG9yaXpvbnRhbCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNSAyMUgxN1YxOUgxNU0xOSA5SDIxVjdIMTlNMyA1VjE5QzMgMjAuMSAzLjkgMjEgNSAyMUg5VjE5SDVWNUg5VjNINUMzLjkgMyAzIDMuOSAzIDVNMTkgM1Y1SDIxQzIxIDMuOSAyMC4xIDMgMTkgM00xMSAyM0gxM1YxSDExTTE5IDE3SDIxVjE1SDE5TTE1IDVIMTdWM0gxNU0xOSAxM0gyMVYxMUgxOU0xOSAyMUMyMC4xIDIxIDIxIDIwLjEgMjEgMTlIMTlaIiAvPjwvc3ZnPg==",
+      "name": "ThreeDFlip",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/flip-horizontal.svg",
+      "shortDescription": "Flip sprites with a 3D effect.",
+      "version": "1.0.1",
+      "description": "Helpful to make a 3D rotation effect on objects.\n\nNote that the X origin point must be at the center for the best results.",
+      "origin": {
+        "identifier": "ThreeDFlip",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "3d",
+        "flip"
+      ],
+      "authorIds": [
+        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2",
+        "IRIhkkTTl2UHhfjrLTTH5GYwkYu1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Flip a Sprite with a 3D effect.",
+          "fullName": "3D Flip",
+          "name": "ThreeDFlip",
+          "objectType": "Sprite",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::PropertyIsFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::SetPropertyElapsedTime"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "+",
+                            "TimeDelta() * 1000"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangeWidth"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyWidth() * abs(cos(3.141592 * Object.Behavior::PropertyElapsedTime() / Object.Behavior::PropertyDuration()))"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "Object.Behavior::PropertyElapsedTime()",
+                            ">=",
+                            "Object.Behavior::PropertyDuration() / 2"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ThreeDFlip::ThreeDFlip::PropertyIsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlipX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ThreeDFlip::ThreeDFlip::PropertyIsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlipX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Egal"
+                          },
+                          "parameters": [
+                            "Object.Behavior::PropertyElapsedTime()",
+                            ">=",
+                            "Object.Behavior::PropertyDuration()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ChangeWidth"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyWidth()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipping"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "FlippedX"
+                              },
+                              "parameters": [
+                                "Object"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "FlippedX"
+                              },
+                              "parameters": [
+                                "Object"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ThreeDFlip::ThreeDFlip",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Start a flipping animation on the object.",
+              "fullName": "Flip the object",
+              "functionType": "Action",
+              "name": "Flip",
+              "sentence": "Flip _PARAM0_ over _PARAM2_ms",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "The previous animation is not yet finished, flip the other way around starting from there.",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::IsFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyElapsedTime"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Behavior::PropertyDuration() - Object.Behavior::PropertyElapsedTime() * GetArgumentAsNumber(\"Duration\") / Object.Behavior::PropertyDuration()"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Set the flipped property as if the previous animation has finished.",
+                      "comment2": ""
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::SetPropertyToggle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ThreeDFlip::ThreeDFlip::IsFlipped"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ThreeDFlip::ThreeDFlip::PropertyToggle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipped"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::SetPropertyToggle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::IsFlipped"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ThreeDFlip::ThreeDFlip::PropertyToggle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipped"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ThreeDFlip::ThreeDFlip::SetPropertyToggle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Start a new flipping animation.",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ThreeDFlip::ThreeDFlip::IsFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyWidth"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Width()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyElapsedTime"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyDuration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsNumber(\"Duration\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ThreeDFlip::ThreeDFlip",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Duration (in milliseconds)",
+                  "name": "Duration",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Stops flipping the object.",
+              "fullName": "Stop the flip",
+              "functionType": "Action",
+              "name": "StopFlip",
+              "sentence": "Stop flipping _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeWidth"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::PropertyWidth()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipped"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "FlippedX"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::SetPropertyIsFlipped"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ThreeDFlip::ThreeDFlip",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Checks if a flipping animation is currently playing.",
+              "fullName": "Flipping is playing",
+              "functionType": "Condition",
+              "name": "IsFlipping",
+              "sentence": "_PARAM0_ is flipping",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::PropertyIsFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ThreeDFlip::ThreeDFlip",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Checks if the object has been flipped.",
+              "fullName": "Is flipped",
+              "functionType": "Condition",
+              "name": "IsFlipped",
+              "sentence": "_PARAM0_ is flipped",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::PropertyIsFlipped"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ThreeDFlip::ThreeDFlip",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Flips the object to one specific side.",
+              "fullName": "Flip to a side",
+              "functionType": "Action",
+              "name": "FlipTo",
+              "sentence": "Flip _PARAM0_ reverse side: _PARAM2_ over _PARAM3_ms",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "When the object is flipping, the \"is flipped\" parameter is not yet set,\nso it's value is the opposite of the animation goal.",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipping"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "GetArgumentAsBoolean"
+                              },
+                              "parameters": [
+                                "\"Flip\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipping"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "GetArgumentAsBoolean"
+                              },
+                              "parameters": [
+                                "\"Flip\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipping"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "GetArgumentAsBoolean"
+                              },
+                              "parameters": [
+                                "\"Flip\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipping"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "GetArgumentAsBoolean"
+                              },
+                              "parameters": [
+                                "\"Flip\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ThreeDFlip::ThreeDFlip::IsFlipped"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThreeDFlip::ThreeDFlip::Flip"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "GetArgumentAsNumber(\"Duration\")",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "Sprite",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ThreeDFlip::ThreeDFlip",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Reverse side",
+                  "name": "Flip",
+                  "supplementaryInformation": "[\"Flipped\",\"Unflipped\"]",
+                  "type": "yesorno"
+                },
+                {
+                  "description": "Duration (in milliseconds)",
+                  "name": "Duration",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "500",
+              "type": "Number",
+              "label": "Rotation duration (in milliseconds)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Duration"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "IsFlipped"
+            },
+            {
+              "value": "\"r\"",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "IsFlipping"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Width"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "Elapse time",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "ElapsedTime"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Toggle"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "D8H",
       "category": "Movement",
@@ -62589,7 +64664,170 @@
       "tags": [],
       "authorIds": [],
       "dependencies": [],
-      "eventsFunctions": [],
+      "eventsFunctions": [
+        {
+          "description": "Check If the position is close to other",
+          "fullName": "Near Position",
+          "functionType": "Condition",
+          "group": "Position",
+          "name": "NearPosition",
+          "sentence": "Threshold_PARAM1_, X_PARAM2_, Y_PARAM3_, OtherX_PARAM4_, OtherY_PARAM5_",
+          "events": [
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "abs(GetArgumentAsNumber(\"OtherX\") - GetArgumentAsNumber(\"X\"))",
+                    "<=",
+                    "GetArgumentAsNumber(\"Threshold\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "abs(GetArgumentAsNumber(\"OtherY\") - GetArgumentAsNumber(\"Y\"))",
+                    "<=",
+                    "GetArgumentAsNumber(\"Threshold\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "DistanceBetweenPositions(GetArgumentAsNumber(\"X\"), GetArgumentAsNumber(\"Y\"), GetArgumentAsNumber(\"OtherX\"), GetArgumentAsNumber(\"OtherY\"))",
+                    "<",
+                    "GetArgumentAsNumber(\"Threshold\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The threshold of the distance",
+              "name": "Threshold",
+              "type": "expression"
+            },
+            {
+              "description": "Position X",
+              "name": "X",
+              "type": "expression"
+            },
+            {
+              "description": "Position Y",
+              "name": "X",
+              "type": "expression"
+            },
+            {
+              "description": "The other object position X",
+              "name": "OtherX",
+              "type": "expression"
+            },
+            {
+              "description": "The other object position Y",
+              "name": "OtherY",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Check if the VALUE is between MIN (inclusive) and MAX (inclusive)",
+          "fullName": "Between",
+          "functionType": "Condition",
+          "group": "math",
+          "name": "Between",
+          "sentence": "Value_PARAM1_,Min_PARAM2_,Max_PARAM3_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "GetArgumentAsNumber(\"Value\")",
+                    ">=",
+                    "GetArgumentAsNumber(\"Min\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "GetArgumentAsNumber(\"Value\")",
+                    "<=",
+                    "GetArgumentAsNumber(\"Max\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The value",
+              "name": "Value",
+              "type": "expression"
+            },
+            {
+              "description": "The min value",
+              "name": "Min",
+              "type": "expression"
+            },
+            {
+              "description": "The max value",
+              "name": "Max",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
       "eventsBasedBehaviors": [],
       "eventsBasedObjects": []
     }
