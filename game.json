@@ -1307,13 +1307,6 @@
         }
       },
       {
-        "file": "Minecraft.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "Minecraft.ttf",
-        "userAdded": true
-      },
-      {
         "alwaysLoaded": false,
         "file": "assets/Coin_Spin_1.png",
         "kind": "image",
@@ -6722,42 +6715,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "raoni-dorim-mountains-night-highress.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "raoni-dorim-mountains-night-highress.jpg",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "uh86m1gyas001.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "uh86m1gyas001.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "pixel-art-sky-moonlight-8-bit-cloud-computer-wallpaper-238921-wallhere.com.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "pixel-art-sky-moonlight-8-bit-cloud-computer-wallpaper-238921-wallhere.com.jpg",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "NkHYP61O-wallha.com.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NkHYP61O-wallha.com.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Tile 30.png",
         "kind": "image",
         "metadata": "",
@@ -6809,6 +6766,246 @@
         "name": "assets\\img\\yellow-box.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/music/main_menu_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\main_menu_1.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/footstep_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\footstep_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/jump_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\jump_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/menu_button_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\menu_button_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/game_start_1.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\game_start_1.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/sword_attack_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\sword_attack_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/sword_damage_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\sword_damage_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/coin_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\coin_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/destroyed_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\destroyed_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/use_item_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\use_item_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/fireball_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\fireball_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/inventory_select.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\inventory_select.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/level_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\level_1.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/damaged_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\damaged_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/game_over.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\game_over.wav",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/slime_dead_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\slime_dead_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/sword_drop_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\sword_drop_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/parry_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\parry_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/skeleton_dead_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\skeleton_dead_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/bat_dead.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\bat_dead.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/coin_2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\coin_2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/potion_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\potion_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/heal_1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\heal_1.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/fire_impact.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\music\\fire_impact.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -15530,6 +15727,21 @@
           "x": 807,
           "y": -810,
           "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Skeleton",
+          "persistentUuid": "54001344-be33-4602-9983-d6989d476975",
+          "width": 0,
+          "x": -272,
+          "y": 177,
+          "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -25618,6 +25830,18 @@
                         "QuestMark",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\music\\coin_1.wav",
+                        "",
+                        "10",
+                        "2"
+                      ]
                     }
                   ]
                 }
@@ -25715,6 +25939,18 @@
                   "parameters": [
                     "BatSpawner"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\music\\level_1.wav",
+                    "yes",
+                    "10",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -25773,14 +26009,21 @@
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "SceneVariablePushString"
-                  },
-                  "parameters": [
-                    "EventBus.Events",
-                    "\"Inventory/Add/HealPotion\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "EventBus.Events",
+                        "\"Inventory/Add/HealPotion\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -26468,6 +26711,33 @@
           "conditions": [
             {
               "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\music\\main_menu_1.wav",
+                "yes",
+                "10",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "SourisSurObjet"
               },
               "parameters": [
@@ -26504,6 +26774,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\music\\game_start_1.ogg",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -27186,6 +27468,18 @@
                 "ParallaxBackgroundMountains",
                 "\"54;54;54\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\music\\game_over.wav",
+                "yes",
+                "20",
+                ""
+              ]
             }
           ]
         },
@@ -27212,6 +27506,25 @@
                 "Player.CenterX()",
                 "=",
                 "Player.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Player",
+                "\"125;125;155\""
               ]
             }
           ]
@@ -27279,6 +27592,18 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\music\\game_start_1.ogg",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "ModVarGlobal"
@@ -27463,6 +27788,18 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\game_start_1.ogg",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
                         {
                           "type": {
                             "value": "ModVarGlobal"
@@ -27654,7 +27991,7 @@
   ],
   "externalEvents": [
     {
-      "associatedLayout": "Empty",
+      "associatedLayout": "Level 1",
       "lastChangeTimeStamp": 0,
       "name": "PlayerController",
       "events": [
@@ -27693,6 +28030,15 @@
                 "-9999",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"FootstepTimer\""
+              ]
             }
           ]
         },
@@ -27710,6 +28056,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -27806,6 +28153,46 @@
                             "Player",
                             "PlatformerObject",
                             "\"Jump\""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PlatformBehavior::IsFalling"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnFloor"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\jump_1.wav",
+                                "",
+                                "100",
+                                ""
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -28085,6 +28472,87 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Footsteps",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsOnFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Health::Health::IsDead"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"FootstepTimer\"",
+                        ">",
+                        "0.2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\music\\footstep_1.wav",
+                        "",
+                        "1",
+                        "0.8"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"FootstepTimer\""
+                      ]
+                    }
+                  ]
                 }
               ],
               "parameters": []
@@ -28094,7 +28562,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "UI",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -28188,7 +28655,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -28245,6 +28711,18 @@
                           "parameters": [
                             "",
                             "\"CoinsTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\coin_2.wav",
+                            "",
+                            "30",
+                            ""
                           ]
                         }
                       ]
@@ -28720,6 +29198,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Attacking",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -28753,7 +29232,6 @@
                   "actions": [],
                   "events": [
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -28867,6 +29345,18 @@
                               "parameters": [
                                 "Player",
                                 "\"attacking\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\sword_attack_1.wav",
+                                "",
+                                "",
+                                ""
                               ]
                             }
                           ]
@@ -29154,6 +29644,18 @@
                                 "",
                                 ""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\sword_damage_1.wav",
+                                "",
+                                "",
+                                ""
+                              ]
                             }
                           ]
                         }
@@ -29237,6 +29739,18 @@
                                 "0",
                                 "1",
                                 "0.08",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\sword_damage_1.wav",
+                                "",
                                 "",
                                 ""
                               ]
@@ -29463,7 +29977,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Damaged",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -29513,7 +30026,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Dying",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -29530,6 +30042,12 @@
                         "Health",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -29540,6 +30058,18 @@
                       "parameters": [
                         "Player",
                         "\"dying\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\music\\sword_drop_1.wav",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -32040,7 +32570,6 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Render Slots",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -32256,6 +32785,18 @@
                             "",
                             "\"HideItemNameTimer\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\inventory_select.mp3",
+                            "",
+                            "",
+                            ""
+                          ]
                         }
                       ]
                     },
@@ -32306,6 +32847,18 @@
                           "parameters": [
                             "",
                             "\"HideItemNameTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\inventory_select.mp3",
+                            "",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -32358,6 +32911,18 @@
                             "",
                             "\"HideItemNameTimer\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\inventory_select.mp3",
+                            "",
+                            "",
+                            ""
+                          ]
                         }
                       ]
                     },
@@ -32408,6 +32973,18 @@
                           "parameters": [
                             "",
                             "\"HideItemNameTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\inventory_select.mp3",
+                            "",
+                            "",
+                            ""
                           ]
                         }
                       ]
@@ -32906,7 +33483,6 @@
                   "colorG": 122,
                   "colorR": 252,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Always",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -33013,6 +33589,18 @@
                           },
                           "parameters": [
                             "FireBall",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\fire_impact.wav",
+                            "",
+                            "",
                             ""
                           ]
                         }
@@ -33200,6 +33788,18 @@
                                 "Player",
                                 "\"using_item\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\heal_1.wav",
+                                "",
+                                "",
+                                ""
+                              ]
                             }
                           ]
                         },
@@ -33296,6 +33896,18 @@
                                 "Player",
                                 "PlatformerObject"
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\use_item_1.wav",
+                                "",
+                                "",
+                                ""
+                              ]
                             }
                           ]
                         },
@@ -33378,6 +33990,18 @@
                                 "Player",
                                 "\"using_item\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\fireball_1.wav",
+                                "",
+                                "50",
+                                ""
+                              ]
                             }
                           ],
                           "events": [
@@ -33454,6 +34078,18 @@
                               "parameters": [
                                 "Player",
                                 "\"using_item\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "assets\\music\\use_item_1.wav",
+                                "",
+                                "",
+                                ""
                               ]
                             }
                           ]
@@ -33591,6 +34227,7 @@
                   "colorG": 116,
                   "colorR": 116,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Handle",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -33934,7 +34571,7 @@
       ]
     },
     {
-      "associatedLayout": "Empty",
+      "associatedLayout": "Level 1",
       "lastChangeTimeStamp": 0,
       "name": "SlimeSmallController",
       "events": [
@@ -34013,6 +34650,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34433,6 +35071,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dead",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34463,6 +35102,18 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\music\\slime_dead_1.wav",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Create"
@@ -34514,7 +35165,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Attack",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34577,6 +35227,18 @@
                     "Player",
                     "Health",
                     "Small_Slime.Variable(BaseAttack)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\music\\damaged_1.wav",
+                    "",
+                    "20",
                     ""
                   ]
                 }
@@ -34889,6 +35551,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Debug",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -35070,7 +35733,7 @@
       ]
     },
     {
-      "associatedLayout": "Empty",
+      "associatedLayout": "Level 1",
       "lastChangeTimeStamp": 0,
       "name": "GlobalEvents",
       "events": [
@@ -35275,6 +35938,18 @@
                     "+",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\music\\coin_1.wav",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ]
             }
@@ -35307,6 +35982,7 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "Skeleton",
                   "conditions": [],
@@ -35501,6 +36177,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -36066,7 +36743,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Attacking",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -36226,7 +36902,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -36382,11 +37057,22 @@
                                         "0",
                                         ""
                                       ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PlaySound"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "assets\\music\\damaged_1.wav",
+                                        "",
+                                        "20",
+                                        ""
+                                      ]
                                     }
                                   ]
                                 },
                                 {
-                                  "folded": true,
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
@@ -36463,6 +37149,18 @@
                                           "parameters": [
                                             "EventBus.Events",
                                             "\"Camera/Shake3\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "PlaySound"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "assets\\music\\parry_1.wav",
+                                            "",
+                                            "",
+                                            ""
                                           ]
                                         }
                                       ]
@@ -36536,11 +37234,22 @@
                                         "0",
                                         ""
                                       ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PlaySound"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "assets\\music\\damaged_1.wav",
+                                        "",
+                                        "20",
+                                        ""
+                                      ]
                                     }
                                   ]
                                 },
                                 {
-                                  "folded": true,
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
@@ -36617,6 +37326,18 @@
                                           "parameters": [
                                             "EventBus.Events",
                                             "\"Camera/Shake3\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "PlaySound"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "assets\\music\\parry_1.wav",
+                                            "",
+                                            "",
+                                            ""
                                           ]
                                         }
                                       ]
@@ -36824,7 +37545,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Dead",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -36858,7 +37578,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -36913,6 +37632,41 @@
                           "parameters": [
                             "Skeleton",
                             ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        },
+                        {
+                          "type": {
+                            "value": "Sprite"
+                          },
+                          "parameters": [
+                            "Skeleton",
+                            "=",
+                            "9"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\music\\skeleton_dead_1.wav",
+                            "",
+                            "20",
+                            "0.6"
                           ]
                         }
                       ]
@@ -37104,6 +37858,18 @@
                   "parameters": [
                     "Destructable",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\music\\destroyed_1.wav",
+                    "",
+                    "20",
+                    "1"
                   ]
                 }
               ],
@@ -37449,6 +38215,12 @@
                     "Health",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -37461,6 +38233,18 @@
                     "State",
                     "=",
                     "\"dead\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\music\\bat_dead.wav",
+                    "",
+                    "100",
+                    ""
                   ]
                 }
               ]
@@ -37503,6 +38287,61 @@
                     "Bat.Variable(SpawnPos.Y)",
                     "50",
                     ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Bat.X() - Player.X()",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Bat.X() - Player.X()",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Bat",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -37617,59 +38456,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "Bat.X() - Player.X()",
-                    ">",
-                    "0"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlipX"
-                  },
-                  "parameters": [
-                    "Bat",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "Bat.X() - Player.X()",
-                    ">",
-                    "0"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "FlipX"
-                  },
-                  "parameters": [
-                    "Bat",
-                    "yes"
-                  ]
-                }
-              ]
             }
           ],
           "parameters": []
@@ -37679,6 +38465,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Attack",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -37781,6 +38568,71 @@
                         "",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\music\\damaged_1.wav",
+                        "",
+                        "20",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Bat.X() - Player.X()",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Bat",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Bat.X() - Player.X()",
+                        ">",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Bat",
+                        "yes"
+                      ]
                     }
                   ]
                 }
@@ -37794,7 +38646,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Dead",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
