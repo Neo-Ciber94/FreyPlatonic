@@ -23,11 +23,40 @@
     "author": "",
     "windowWidth": 320,
     "windowHeight": 180,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "D:\\Coding\\Projects\\GDevelop\\frey_platonic\\build",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "android-icon-144.png",
+      "android-icon-192": "android-icon-192.png",
+      "android-icon-36": "android-icon-36.png",
+      "android-icon-48": "android-icon-48.png",
+      "android-icon-72": "android-icon-72.png",
+      "android-icon-96": "android-icon-96.png",
+      "android-windowSplashScreenAnimatedIcon": "android-windowSplashScreenAnimatedIcon.png",
+      "desktop-icon-512": "desktop-icon-512.png",
+      "ios-icon-100": "ios-icon-100.png",
+      "ios-icon-1024": "ios-icon-1024.png",
+      "ios-icon-114": "ios-icon-114.png",
+      "ios-icon-120": "ios-icon-120.png",
+      "ios-icon-144": "ios-icon-144.png",
+      "ios-icon-152": "ios-icon-152.png",
+      "ios-icon-167": "ios-icon-167.png",
+      "ios-icon-180": "ios-icon-180.png",
+      "ios-icon-20": "ios-icon-20.png",
+      "ios-icon-29": "ios-icon-29.png",
+      "ios-icon-40": "ios-icon-40.png",
+      "ios-icon-50": "ios-icon-50.png",
+      "ios-icon-57": "ios-icon-57.png",
+      "ios-icon-58": "ios-icon-58.png",
+      "ios-icon-60": "ios-icon-60.png",
+      "ios-icon-72": "ios-icon-72.png",
+      "ios-icon-76": "ios-icon-76.png",
+      "ios-icon-80": "ios-icon-80.png",
+      "ios-icon-87": "ios-icon-87.png",
+      "liluo-thumbnail": "Screenshot_2.jpg"
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -1078,23 +1107,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/tilemap palletes/level1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\tilemap palletes\\level1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "disablePreload": false,
-        "file": "assets/tilemap palletes/level1.json",
-        "kind": "json",
-        "metadata": "",
-        "name": "assets\\tilemap palletes\\level1.json",
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/img/external/PixelPlatformerSet2v.1.1/main_lev_buildA.png",
         "kind": "image",
         "metadata": "",
@@ -1108,23 +1120,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\box-16x16-green.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "disablePreload": false,
-        "file": "assets/tilemap/level1/level1.json",
-        "kind": "json",
-        "metadata": "",
-        "name": "assets\\tilemap\\level1\\level1.json",
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/tilemap/level1/bg.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\tilemap\\level1\\bg.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1405,54 +1400,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Ladder.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Ladder.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/GDevelop examples/Platformer/Level/Ladder.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "disablePreload": false,
-        "file": "assets/tilemap/level_1/level1.json",
-        "kind": "json",
-        "metadata": "",
-        "name": "assets\\tilemap\\level_1\\level1.json",
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/tilemap/level_1/bg.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\tilemap\\level_1\\bg.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/platform-box-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\platform-box-1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/tilemap/level_1/bg x2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\tilemap\\level_1\\bg x2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/img/external/Slime/slime_small/slime_small1.png",
         "kind": "image",
         "metadata": "",
@@ -1601,19 +1548,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Graveyard Background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Graveyard Background.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/pzUH Pack/Worlds/Graveyard/Graveyard Background.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Merged Full Background.png",
         "kind": "image",
         "metadata": "",
@@ -1718,19 +1652,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Pickaxe.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Pickaxe.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Pickaxe.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/tiled_Parallax Background Sky.png",
         "kind": "image",
         "metadata": "",
@@ -1739,84 +1660,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Backgrounds/tiled_Parallax Background Sky.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Boss Golem_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Boss Golem_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Boss Golem_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Boss Golem_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Boss Golem_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Boss Golem_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Boss Golem_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Boss Golem_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Boss Golem_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Boss Golem_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Boss Golem_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Boss Golem_Idle_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Boss Golem_Idle_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Boss Golem_Idle_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Boss Golem_Idle_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Boss Golem_Idle_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Boss Golem_Idle_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Boss Golem_Idle_6.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -1939,19 +1782,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Tile 27.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 27.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 27.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Mushrooms.png",
         "kind": "image",
         "metadata": "",
@@ -1986,19 +1816,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Misc/Bridge Support.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 28.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 28.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 28.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -2121,19 +1938,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Menu Popup Background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Menu Popup Background.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/UI/Menu Popup Background.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Grass_Background.png",
         "kind": "image",
         "metadata": "",
@@ -2155,19 +1959,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Misc/Grass_Foreground.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tree Trunk.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tree Trunk.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tree Trunk.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -2212,58 +2003,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Skull Slime_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Skull Slime_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Skull Slime_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Skull Slime_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Skull Slime_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Skull Slime_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Skull Slime_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Skull Slime_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Skull Slime_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Skull Slime_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Skull Slime_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Skull Slime_Idle_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Tile 2.png",
         "kind": "image",
         "metadata": "",
@@ -2272,19 +2011,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 37.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 37.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 37.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -2485,19 +2211,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Tile 34.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 34.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 34.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Mushroom_Walk_1.png",
         "kind": "image",
         "metadata": "",
@@ -2589,32 +2302,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Tile 32.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 32.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 32.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 24.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 24.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 24.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Menu Button_Active.png",
         "kind": "image",
         "metadata": "",
@@ -2636,123 +2323,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/UI/Menu Button_Default.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 2_Working_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 2_Working_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 2_Working_8.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -2818,97 +2388,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Short Roof.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blacksmith_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blacksmith_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Blacksmith_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blacksmith_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blacksmith_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Blacksmith_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blacksmith_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blacksmith_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Blacksmith_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blacksmith_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blacksmith_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Blacksmith_Idle_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blacksmith_Idle_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blacksmith_Idle_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Blacksmith_Idle_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blacksmith_Idle_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blacksmith_Idle_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Blacksmith_Idle_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blacksmith_Idle_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blacksmith_Idle_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Blacksmith_Idle_7.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -2992,19 +2471,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Light.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Light.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Light.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Bat_Fly_1.png",
         "kind": "image",
         "metadata": "",
@@ -3070,19 +2536,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Tile 26.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 26.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 26.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Tile 12.png",
         "kind": "image",
         "metadata": "",
@@ -3104,214 +2557,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Cage.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Attack_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Attack_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Attack_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Attack_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Attack_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Attack_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Attack_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Attack_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Attack_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Attack_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Attack_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Attack_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Attack_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Attack_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Attack_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Attack_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Attack_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Attack_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Attack_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Attack_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Attack_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog_Idle_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog_Idle_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog_Idle_8.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 7.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -3343,162 +2588,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Forest Goblin_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Forest Goblin_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Forest Goblin_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Forest Goblin_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin_Idle_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Wood Pillar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Wood Pillar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Wood Pillar.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Plant Mutant_Attack_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Plant Mutant_Attack_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Plant Mutant_Attack_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Plant Mutant_Attack_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Plant Mutant_Attack_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Plant Mutant_Attack_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Plant Mutant_Attack_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Plant Mutant_Attack_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Plant Mutant_Attack_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Plant Mutant_Attack_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Plant Mutant_Attack_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Plant Mutant_Attack_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Plant Mutant_Attack_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Plant Mutant_Attack_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Plant Mutant_Attack_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Plant Mutant_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Plant Mutant_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Plant Mutant_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Plant Mutant_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Plant Mutant_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Plant Mutant_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Hanging Flag Medium.png",
         "kind": "image",
         "metadata": "",
@@ -3520,58 +2609,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Wood.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Forest Goblin Hog_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin Hog_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin Hog_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Forest Goblin Hog_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin Hog_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin Hog_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Forest Goblin Hog_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin Hog_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin Hog_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Forest Goblin Hog_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Forest Goblin Hog_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Forest Goblin Hog_Idle_4.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -3616,201 +2653,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Wood Platform Tall Big.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Wood Platform Tall Big.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Wood Platform Tall Big.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 35.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 35.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 35.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 13.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 13.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 13.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_8.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Arrow_Stuck_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Arrow_Stuck_9.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Arrow_Stuck_9.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Tile 10.png",
         "kind": "image",
         "metadata": "",
@@ -3824,123 +2666,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Frog Tongue_Attack_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Frog Tongue_Attack_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Frog Tongue_Attack_8.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 22.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 22.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 22.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Tile 8.png",
         "kind": "image",
         "metadata": "",
@@ -3949,45 +2674,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 8.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Guard_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Guard_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Guard_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Guard_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Guard_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Guard_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Guard_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Guard_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Guard_Idle_3.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -4027,71 +2713,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Miner_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Dark Guard_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dark Guard_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Dark Guard_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Dark Guard_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dark Guard_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Dark Guard_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Dark Guard_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dark Guard_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Dark Guard_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Dark Guard_Idle_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dark Guard_Idle_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Dark Guard_Idle_4.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -4149,45 +2770,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Tile 14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 14.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 14.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 21.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 21.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 21.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Statue.png",
         "kind": "image",
         "metadata": "",
@@ -4214,19 +2796,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Gate Hold.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Gate Hold.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Gate Hold.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Dreamcatcher Wide.png",
         "kind": "image",
         "metadata": "",
@@ -4235,149 +2804,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Dreamcatcher Wide.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Gate Top.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Gate Top.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Village Gate Top.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Attack_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Attack_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Attack_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Attack_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Attack_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Attack_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Attack_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Attack_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Attack_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Attack_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Attack_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Attack_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Attack_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Attack_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Attack_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Walk_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Walk_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Walk_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Walk_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Walk_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Walk_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Walk_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Walk_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Walk_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Walk_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Walk_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Walk_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Snail_Walk_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Snail_Walk_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Enemies/Snail_Walk_5.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -4404,58 +2830,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Wood Platform Top.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Wood Platform Small.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Wood Platform Small.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Wood Platform Small.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 23.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 23.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 23.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 19.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 19.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 19.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Wood Platform Tall.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Wood Platform Tall.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Wood Platform Tall.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -4500,19 +2874,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Tile 36.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 36.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 36.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Cave Entrance.png",
         "kind": "image",
         "metadata": "",
@@ -4521,19 +2882,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Misc/Cave Entrance.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 33.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 33.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 33.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -4578,19 +2926,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Gate Pillar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Gate Pillar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Gate Pillar.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Old Shaman_Idle_1.png",
         "kind": "image",
         "metadata": "",
@@ -4604,32 +2939,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Old Shaman_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Old Shaman_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Old Shaman_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Old Shaman_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Old Shaman_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Old Shaman_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Big Wood Platform 1.png",
         "kind": "image",
         "metadata": "",
@@ -4638,19 +2947,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Big Wood Platform 1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 20.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 20.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 20.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -4677,214 +2973,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Objects/Big Wood Platform 2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_10.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_10.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_11.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_11.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_11.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_12.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_12.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_12.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_13.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_13.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_13.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_14.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_14.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_15.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_15.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_15.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_8.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 1_Talk_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 1_Talk_9.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 1_Talk_9.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tile 25.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tile 25.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 25.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -5020,149 +3108,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Boss Icon.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Boss Icon.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/UI/Boss Icon.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 1_Working_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 1_Working_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 1_Working_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 1_Working_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 1_Working_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 1_Working_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 1_Working_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 1_Working_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 1_Working_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 1_Working_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 1_Working_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 1_Working_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 1_Working_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 1_Working_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 1_Working_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 1_Working_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 1_Working_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 1_Working_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Builder 1_Working_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Builder 1_Working_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Builder 1_Working_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 2_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 2_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 2_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 2_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 2_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 2_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Village Lady 2_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Village Lady 2_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Village Lady 2_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Hanging Flag_Blue.png",
         "kind": "image",
         "metadata": "",
@@ -5197,58 +3142,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Misc/Cave Background Hole.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Alchemist_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Alchemist_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Alchemist_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Alchemist_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Alchemist_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Alchemist_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Alchemist_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Alchemist_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/NPC/Alchemist_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Tree Trunk Thin.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tree Trunk Thin.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tree Trunk Thin.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -5301,461 +3194,6 @@
         "userAdded": false,
         "origin": {
           "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Tiles/Tile 16.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_10.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_10.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_8.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Attack_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Attack_9.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Attack_9.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_10.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_10.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_8.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Fall_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Fall_9.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Fall_9.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Idle_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Idle_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Idle_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Idle_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Idle_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Idle_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Idle_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Idle_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Idle_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Jump_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Jump_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Jump_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Jump_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Jump_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Jump_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Jump_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Jump_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Jump_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Jump_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Jump_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Jump_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_1.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_2.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_3.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_4.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_5.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_6.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_7.png",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player_Run_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Player_Run_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/Player/Player_Run_8.png",
           "name": "gdevelop-asset-store"
         }
       },
@@ -7005,6 +4443,258 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Screenshot_2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screenshot_2.jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-192.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-96.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-48.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-windowSplashScreenAnimatedIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-windowSplashScreenAnimatedIcon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-20.png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -14585,7 +12275,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8350000000000039,
+        "zoomFactor": 1.7350000000000028,
         "windowMask": false
       },
       "objectsGroups": [
@@ -16610,47 +14300,6 @@
       ],
       "objects": [
         {
-          "assetStoreId": "",
-          "name": "Bg",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\tilemap\\level_1\\bg.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "assetStoreId": "04b166cd44c2df712bc9627d9deca631d444d38e37bcba4400e30788a0ab20d9",
           "height": 128,
           "name": "ParallaxForestTreesDark",
@@ -16661,47 +14310,6 @@
           "variables": [],
           "effects": [],
           "behaviors": []
-        },
-        {
-          "assetStoreId": "33c07a5c064170a01c6653a95b7b16a827b9081a55debd61bf48c640e6b91f34",
-          "name": "Tile15",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Tile 15.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "assetStoreId": "a63fcfb748fe597e31158ec2b318e63cca189d67fadc5970e172cf04a182a74b",
@@ -16755,88 +14363,6 @@
           "variables": [],
           "effects": [],
           "behaviors": []
-        },
-        {
-          "assetStoreId": "20f6c573b4176cc98ee1961fb127ed6db382daace9c8c318ed23ff4ecac2139c",
-          "name": "Tile1",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Tile 1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "a202a4373fc2e9474b6d30a3c0a9df5d0852100fc41e0128ee69b8552eda5f53",
-          "name": "Tile11",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.02500000037252903,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Tile 11.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         },
         {
           "assetStoreId": "d00a522bed238ddf5dd048d9e530833a895b8428ca8957674011254efcfc9774",
