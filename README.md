@@ -2,6 +2,8 @@
 
 An infinite platformer where you need to destroy all your enemies!
 
+![Frey Platonic](./assets/img/screenshot-1.jpg)
+
 ## Controls
 
 1. `WASD` movement
