@@ -1,5 +1,7 @@
 # FreyPlatonic
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b56ea0a4-78ff-4438-8d16-b8a1006416fe/deploy-status)](https://app.netlify.com/sites/spiffy-swan-c9ff23/deploys)
+
 An infinite platformer where you need to destroy all your enemies!
 
 ![Frey Platonic](./assets/img/screenshot-1.jpg)
