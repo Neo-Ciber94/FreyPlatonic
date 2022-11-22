@@ -4,6 +4,11 @@ An infinite platformer where you need to destroy all your enemies!
 
 ![Frey Platonic](./assets/img/screenshot-1.jpg)
 
+
+## Try it out!
+
+https://spiffy-swan-c9ff23.netlify.app/
+
 ## Controls
 
 1. `WASD` movement

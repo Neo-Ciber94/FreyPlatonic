@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 320,
     "windowHeight": 180,
-    "latestCompilationDirectory": "D:\\Coding\\Projects\\GDevelop\\frey_platonic\\build",
+    "latestCompilationDirectory": "D:\\Coding\\Projects\\GDevelop\\frey_platonic\\",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -24290,6 +24290,17 @@
                     "assets\\music\\level_1.wav",
                     "yes",
                     "10",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::SetMaxHealth"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "GlobalVariable(Player.BaseHP)",
                     ""
                   ]
                 }

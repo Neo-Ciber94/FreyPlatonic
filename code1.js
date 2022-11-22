@@ -1357,6 +1357,7 @@ gdjs.Level_321Code.condition0IsTrue_0.val = false;
 gdjs.Level_321Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.Level_321Code.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("BatSpawner"), gdjs.Level_321Code.GDBatSpawnerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Level_321Code.GDPlayerObjects1);
 gdjs.copyArray(runtimeScene.getObjects("SkeletonSpawner"), gdjs.Level_321Code.GDSkeletonSpawnerObjects1);
 gdjs.copyArray(runtimeScene.getObjects("SlimeSpawner"), gdjs.Level_321Code.GDSlimeSpawnerObjects1);
 {for(var i = 0, len = gdjs.Level_321Code.GDSlimeSpawnerObjects1.length ;i < len;++i) {
@@ -1370,6 +1371,9 @@ gdjs.copyArray(runtimeScene.getObjects("SlimeSpawner"), gdjs.Level_321Code.GDSli
 }
 }{gdjs.evtTools.input.hideCursor(runtimeScene);
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\music\\level_1.wav", true, 10, 1);
+}{for(var i = 0, len = gdjs.Level_321Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDPlayerObjects1[i].getBehavior("Health").SetMaxHealth(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("BaseHP")), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
 }
 { //Subevents
 gdjs.Level_321Code.eventsList7(runtimeScene);} //End of subevents
