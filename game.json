@@ -23,7 +23,7 @@
     "author": "",
     "windowWidth": 320,
     "windowHeight": 180,
-    "latestCompilationDirectory": "D:\\Coding\\Projects\\GDevelop\\frey_platonic\\",
+    "latestCompilationDirectory": "D:\\Coding\\Projects\\GDevelop\\frey_platonic\\build",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -11835,7 +11835,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.5749999999999984,
+        "zoomFactor": 1.4999999999999987,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -11996,12 +11996,27 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Author2",
+          "name": "Author",
           "persistentUuid": "8d015f91-9648-4da5-bc6d-aedcd2b14bb4",
           "width": 0,
           "x": 275,
           "y": 1,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Help",
+          "persistentUuid": "8bc1cae5-bb82-4da6-aa19-b0b086a32215",
+          "width": 0,
+          "x": 118,
+          "y": 94,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12064,29 +12079,9 @@
         },
         {
           "assetStoreId": "",
-          "name": "Author",
-          "tags": "",
-          "type": "BitmapText::BitmapTextObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "text": "Freddy L.",
-            "opacity": 200,
-            "scale": 0.5,
-            "fontSize": 20,
-            "tint": "0;0;0",
-            "bitmapFontResourceName": "",
-            "textureAtlasResourceName": "",
-            "align": "left",
-            "wordWrap": true
-          }
-        },
-        {
-          "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "Author2",
+          "name": "Author",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -12095,6 +12090,41 @@
           "effects": [],
           "behaviors": [],
           "string": "Freddy L.",
+          "font": "",
+          "characterSize": 10,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Help",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 0,
+                "outerStrength": 1
+              },
+              "stringParameters": {
+                "color": "255;157;239"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "string": "WASD - Movement\nSpace - Jump\n1,2,3,4 - Select Item\nE - Use Item",
           "font": "",
           "characterSize": 10,
           "color": {
@@ -12151,6 +12181,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -12244,6 +12275,140 @@
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Help",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Help",
+                    "\"HideHelp\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Help",
+                    "\"HideHelp\"",
+                    ">",
+                    "10"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "Help",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Help",
+                    "\"HideHelp\"",
+                    "<",
+                    "10"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::Opacity"
+                  },
+                  "parameters": [
+                    "Help",
+                    "=",
+                    "255"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "F1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "h"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Help",
+                    "\"HideHelp\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Link",
