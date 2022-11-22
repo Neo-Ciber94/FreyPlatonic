@@ -11,7 +11,7 @@ gdjs.evtsExt__Choose__RandomNumber.conditionTrue_0 = {val:false};
 gdjs.evtsExt__Choose__RandomNumber.condition0IsTrue_0 = {val:false};
 
 
-gdjs.evtsExt__Choose__RandomNumber.userFunc0xe8ef38 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Choose__RandomNumber.userFunc0xe4d3d0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {string[]} */
 const choices = eventsFunctionContext.getArgument("NumbersChoiceString").split(',');
@@ -23,7 +23,7 @@ gdjs.evtsExt__Choose__RandomNumber.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__Choose__RandomNumber.userFunc0xe8ef38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Choose__RandomNumber.userFunc0xe4d3d0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -314,9 +314,16 @@ gdjs.Game_32OverCode.eventsList0 = function(runtimeScene) {
 
 
 gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+gdjs.Game_32OverCode.condition1IsTrue_0.val = false;
 {
 gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+}if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
+{
+{gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(15735060);
+}
+}}
+if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Game_32OverCode.GDPlayerObjects2);
 {gdjs.evtTools.sound.playSound(runtimeScene, "assets\\music\\game_start_1.ogg", false, 100, 1);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).getChild("BaseHP").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("BasePlayerHP")));
@@ -601,7 +608,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(r
 }if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17727260);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17367556);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
@@ -627,7 +634,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(r
 }if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17728628);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17368924);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
@@ -653,7 +660,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(r
 }if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17730028);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17370324);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
@@ -679,7 +686,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(r
 }if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17731396);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17371692);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
@@ -1497,7 +1504,7 @@ gdjs.Game_32OverCode.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(r
 }if ( gdjs.Game_32OverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition2IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17749900);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17390196);
 }
 }}
 }
@@ -1863,7 +1870,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32OverCode.GDPlayerObjects4.length;i<l;++i) 
 gdjs.Game_32OverCode.GDPlayerObjects4.length = k;}if ( gdjs.Game_32OverCode.condition1IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition2IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17632492);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17263780);
 }
 }}
 }
@@ -2757,7 +2764,7 @@ gdjs.Game_32OverCode.eventsList39 = function(runtimeScene) {
 gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition0IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17652844);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17305028);
 }
 }if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.Game_32OverCode.GDBatObjects3 */
@@ -2800,7 +2807,7 @@ gdjs.Game_32OverCode.eventsList40 = function(runtimeScene) {
 gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition0IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17656572);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17271972);
 }
 }if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.Game_32OverCode.GDBarrelObjects2 */
@@ -2936,7 +2943,7 @@ gdjs.copyArray(gdjs.Game_32OverCode.GDPlayerObjects3_1final, gdjs.Game_32OverCod
 }if ( gdjs.Game_32OverCode.condition2IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition3IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17592276);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17304044);
 }
 }}
 }
@@ -3340,7 +3347,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32OverCode.GDPlayerObjects3.length;i<l;++i) 
 gdjs.Game_32OverCode.GDPlayerObjects3.length = k;}if ( gdjs.Game_32OverCode.condition2IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition3IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17659220);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17276060);
 }
 }}
 }
@@ -3526,7 +3533,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32OverCode.GDPlayerObjects2.length;i<l;++i) 
 gdjs.Game_32OverCode.GDPlayerObjects2.length = k;}if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17663644);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17287156);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
@@ -3596,7 +3603,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(r
 }if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17668500);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(17263972);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {

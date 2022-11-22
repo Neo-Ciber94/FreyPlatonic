@@ -11387,13 +11387,15 @@
           "HealToBeApplied": 0
         },
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         },
         {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -11406,9 +11408,7 @@
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 700,
           "maxSpeed": 250,
-          "name": "PlatformerObject",
           "slopeMaxAngle": 60,
-          "type": "PlatformBehavior::PlatformerObjectBehavior",
           "useLegacyTrajectory": false,
           "xGrabTolerance": 10,
           "yGrabOffset": 0
@@ -11697,6 +11697,12 @@
           "name": "BaseSkeletonHP",
           "type": "number",
           "value": 3
+        },
+        {
+          "folded": true,
+          "name": "DeathCountBonus",
+          "type": "number",
+          "value": 4
         },
         {
           "folded": true,
@@ -12341,7 +12347,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.7350000000000028,
+        "zoomFactor": 1.1850000000000032,
         "windowMask": false
       },
       "objectsGroups": [
@@ -25514,6 +25520,12 @@
                         "",
                         "Left"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -25981,6 +25993,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -26724,7 +26737,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "HP",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
